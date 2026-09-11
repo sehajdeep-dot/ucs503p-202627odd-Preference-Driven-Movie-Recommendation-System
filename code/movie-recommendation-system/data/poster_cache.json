@@ -6,7 +6,8 @@
     "tmdb_rating": 5.9,
     "release_date": "1996-10-25",
     "runtime": 92,
-    "tmdb_url": "https://www.themoviedb.org/movie/37616"
+    "tmdb_url": "https://www.themoviedb.org/movie/37616",
+    "streaming_providers": []
   },
   "170399": {
     "tmdb_id": 417644,
@@ -15,7 +16,8 @@
     "tmdb_rating": 6.1,
     "release_date": "2017-03-23",
     "runtime": 101,
-    "tmdb_url": "https://www.themoviedb.org/movie/417644"
+    "tmdb_url": "https://www.themoviedb.org/movie/417644",
+    "streaming_providers": []
   },
   "33672": {
     "tmdb_id": 9787,
@@ -23,17 +25,28 @@
     "overview": "The radical true story behind three teenage surfers from Venice Beach, California, who took skateboarding to the extreme and changed the world of sports forever. Stacy Peralta, Tony Alva and Jay Adams are the Z-Boys, a bunch of nobodies until they create a new style of skateboarding that becomes a worldwide phenomenon. But when their hobby becomes a business, the success shreds their friendship.",
     "tmdb_rating": 7.1,
     "release_date": "2005-06-03",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/9787"
+    "runtime": 107,
+    "tmdb_url": "https://www.themoviedb.org/movie/9787",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      }
+    ]
   },
   "27695": {
     "tmdb_id": 11556,
     "poster": "https://image.tmdb.org/t/p/w500/Y5O3hU5DpH4Kz1wcPDumGjTkxb.jpg",
     "overview": "A hacker who is spying on a pretty neighbour messes up his assignment to break into Swiss bank accounts for Russian mobsters.",
-    "tmdb_rating": 6.6,
+    "tmdb_rating": 6.7,
     "release_date": "2003-10-03",
-    "runtime": 93,
-    "tmdb_url": "https://www.themoviedb.org/movie/11556"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/11556",
+    "streaming_providers": []
   },
   "85401": {
     "tmdb_id": 1226863,
@@ -41,8 +54,14 @@
     "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
     "tmdb_rating": 8.2,
     "release_date": "2026-04-01",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1226863"
+    "runtime": 98,
+    "tmdb_url": "https://www.themoviedb.org/movie/1226863",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
   },
   "4442": {
     "tmdb_id": 13938,
@@ -51,7 +70,8 @@
     "tmdb_rating": 6.5,
     "release_date": "1985-03-22",
     "runtime": 109,
-    "tmdb_url": "https://www.themoviedb.org/movie/13938"
+    "tmdb_url": "https://www.themoviedb.org/movie/13938",
+    "streaming_providers": []
   },
   "34450": {
     "tmdb_id": 25074,
@@ -60,7 +80,8 @@
     "tmdb_rating": 7.1,
     "release_date": "1989-06-15",
     "runtime": 126,
-    "tmdb_url": "https://www.themoviedb.org/movie/25074"
+    "tmdb_url": "https://www.themoviedb.org/movie/25074",
+    "streaming_providers": []
   },
   "32460": {
     "tmdb_id": 158,
@@ -68,8 +89,9 @@
     "overview": "Two young men, Martin and Rudi, both suffering from terminal cancer, get to know each other in a hospital room. They drown their desperation in tequila and decide to take one last trip to the sea. Drunk and still in pajamas they steal the first fancy car they find, a 60's Mercedes convertible. The car happens to belong to a bunch of gangsters, which immediately start to chase it, since it contains more than the pistol Martin finds in the glove box.",
     "tmdb_rating": 7.7,
     "release_date": "1997-02-20",
-    "runtime": 89,
-    "tmdb_url": "https://www.themoviedb.org/movie/158"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/158",
+    "streaming_providers": []
   },
   "147410": {
     "tmdb_id": 321751,
@@ -95,8 +117,9 @@
     "overview": "A reporter in Iraq might just have the story of a lifetime when he meets Lyn Cassady, a guy who claims to be a former member of the U.S. Army's New Earth Army, a unit that employs paranormal powers in their missions.",
     "tmdb_rating": 6.0,
     "release_date": "2009-10-17",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/10313"
+    "runtime": 94,
+    "tmdb_url": "https://www.themoviedb.org/movie/10313",
+    "streaming_providers": []
   },
   "84523": {
     "tmdb_id": 39029,
@@ -105,7 +128,8 @@
     "tmdb_rating": 7.0,
     "release_date": "1968-06-22",
     "runtime": 114,
-    "tmdb_url": "https://www.themoviedb.org/movie/39029"
+    "tmdb_url": "https://www.themoviedb.org/movie/39029",
+    "streaming_providers": []
   },
   "72142": {
     "tmdb_id": 28422,
@@ -114,7 +138,8 @@
     "tmdb_rating": 7.9,
     "release_date": "2008-11-29",
     "runtime": 237,
-    "tmdb_url": "https://www.themoviedb.org/movie/28422"
+    "tmdb_url": "https://www.themoviedb.org/movie/28422",
+    "streaming_providers": []
   },
   "73676": {
     "tmdb_id": 25676,
@@ -123,7 +148,21 @@
     "tmdb_rating": 7.0,
     "release_date": "2006-09-28",
     "runtime": 136,
-    "tmdb_url": "https://www.themoviedb.org/movie/25676"
+    "tmdb_url": "https://www.themoviedb.org/movie/25676",
+    "streaming_providers": [
+      {
+        "name": "Hungama Play",
+        "logo": "https://image.tmdb.org/t/p/w92/yUUqCizzC0JWznvH1eqUmzIhJBK.png"
+      },
+      {
+        "name": "EPIC ON",
+        "logo": "https://image.tmdb.org/t/p/w92/a4kpMRbwRLxGg24XSuF8oUxywxr.png"
+      },
+      {
+        "name": "VI movies and tv",
+        "logo": "https://image.tmdb.org/t/p/w92/9SVVjJ89csOM0xoeVVK8BryUf9a.png"
+      }
+    ]
   },
   "438": {
     "tmdb_id": 19176,
@@ -132,7 +171,8 @@
     "tmdb_rating": 5.7,
     "release_date": "1994-06-03",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/19176"
+    "tmdb_url": "https://www.themoviedb.org/movie/19176",
+    "streaming_providers": []
   },
   "170597": {
     "tmdb_id": 129229,
@@ -239,8 +279,10 @@
     "overview": "A fashion designer and his CIA agent business partner must join forces to stop a group of terrorists from smuggling explosives in counterfeit jeans during the handover of Hong Kong.",
     "tmdb_rating": 5.4,
     "release_date": "1998-09-04",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/37498"
+    "runtime": 91,
+    "tmdb_url": "https://www.themoviedb.org/movie/37498",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "5155": {
     "tmdb_id": 22910,
@@ -248,8 +290,10 @@
     "overview": "Women rebel against slave labor in a filthy jungle prison where they feed sugar cane to a mechanical maw.",
     "tmdb_rating": 5.6,
     "release_date": "1972-07-01",
-    "runtime": 96,
-    "tmdb_url": "https://www.themoviedb.org/movie/22910"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/22910",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "4441": {
     "tmdb_id": 13333,
@@ -258,7 +302,9 @@
     "tmdb_rating": 6.4,
     "release_date": "1978-03-23",
     "runtime": 101,
-    "tmdb_url": "https://www.themoviedb.org/movie/13333"
+    "tmdb_url": "https://www.themoviedb.org/movie/13333",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "141400": {
     "tmdb_id": 48297,
@@ -266,8 +312,10 @@
     "overview": "Three North Shaolin teachers are called on by the Manchus to teach their soldiers and are urged to challenge the current South Shaolin teachers. They defeat the South Shaolin teachers and, that night, the head general kills the South Shaolin teachers and blames their death on the North Shaolin teachers. The South Shaolin master sends more of his pupils, who are killed accidentally by the North Shaolin teachers. He finally sends two more of his students to train with old masters and trains one student himself with the goal of finally defeating the North Shaolin experts.",
     "tmdb_rating": 6.5,
     "release_date": "1978-11-19",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/48297"
+    "runtime": 106,
+    "tmdb_url": "https://www.themoviedb.org/movie/48297",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "152591": {
     "tmdb_id": 365222,
@@ -284,8 +332,10 @@
     "overview": "Philip Kwok plays a repentant killer who vows to destroy the masked gang of which he was a member. A young fighter and his martial arts brothers come to the town to catch the killers, but one of them is not to be trusted!",
     "tmdb_rating": 6.9,
     "release_date": "1981-05-15",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/63441"
+    "runtime": 92,
+    "tmdb_url": "https://www.themoviedb.org/movie/63441",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "5409": {
     "tmdb_id": 13153,
@@ -293,8 +343,10 @@
     "overview": "College student Jake Lo is pursued by smugglers, mobsters and crooked federal agents after he witnesses a murder by a Mafia kingpin.",
     "tmdb_rating": 6.4,
     "release_date": "1992-08-21",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/13153"
+    "runtime": 95,
+    "tmdb_url": "https://www.themoviedb.org/movie/13153",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "5580": {
     "tmdb_id": 16370,
@@ -311,8 +363,10 @@
     "overview": "Dragon and his madcap pal Cowboy spend their days getting into mischief, frustrating the elders, chasing girls, and competing in the village sport. When Dragon overhears a fiendish plot by smugglers to sell China's national treasures overseas, the pair leap into action. Also, Cowboy's wealthy father is kidnapped by the villainous and lethal Big Boss, and the scene is set for a furious martial arts showdown.",
     "tmdb_rating": 6.5,
     "release_date": "1982-01-21",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/16407"
+    "runtime": 96,
+    "tmdb_url": "https://www.themoviedb.org/movie/16407",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "3940": {
     "tmdb_id": 27767,
@@ -429,7 +483,8 @@
     "tmdb_rating": 7.2,
     "release_date": "1994-09-09",
     "runtime": 112,
-    "tmdb_url": "https://www.themoviedb.org/movie/49133"
+    "tmdb_url": "https://www.themoviedb.org/movie/49133",
+    "streaming_providers": []
   },
   "3673": {
     "tmdb_id": 21299,
@@ -447,7 +502,8 @@
     "tmdb_rating": 8.1,
     "release_date": "2013-12-25",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/282848"
+    "tmdb_url": "https://www.themoviedb.org/movie/282848",
+    "streaming_providers": []
   },
   "102666": {
     "tmdb_id": 20803,
@@ -455,8 +511,9 @@
     "overview": "A scientist builds a time machine and accidentally sends his apartment complex manager and a petty burglar to 16th century Moscow, while Tsar Ivan the Terrible travels to 1973.",
     "tmdb_rating": 7.9,
     "release_date": "1973-09-17",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/20803"
+    "runtime": 88,
+    "tmdb_url": "https://www.themoviedb.org/movie/20803",
+    "streaming_providers": []
   },
   "32511": {
     "tmdb_id": 44154,
@@ -464,8 +521,9 @@
     "overview": "Yang Hui-zhen, a mysterious princess on the run from corrupt government officials, is joined in her endeavors by skilled Buddhist monks and an unambitious painter named Gu Sheng-zhai.",
     "tmdb_rating": 7.6,
     "release_date": "1970-07-10",
-    "runtime": 180,
-    "tmdb_url": "https://www.themoviedb.org/movie/44154"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/44154",
+    "streaming_providers": []
   },
   "155774": {
     "tmdb_id": 314029,
@@ -491,8 +549,9 @@
     "overview": "A Shogun who grew paranoid as he became senile sent his ninjas to kill his samurai. They failed but did kill the samurai\u2019s wife. The samurai swore to avenge the death of his wife and roams the countryside with his toddler son in search of vengeance.",
     "tmdb_rating": 6.9,
     "release_date": "1980-11-11",
-    "runtime": 85,
-    "tmdb_url": "https://www.themoviedb.org/movie/15119"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/15119",
+    "streaming_providers": []
   },
   "7205": {
     "tmdb_id": 14815,
@@ -509,8 +568,9 @@
     "overview": "A former aristocrat Ippolit Vorobyaninov leads a miserable life in Soviet Russia. His mother-in-law reveals a secret to him - she hid family diamonds in one of the twelve chairs they once had. Vorobyaninov in cooperation with a young con artist Ostap Bender start a long search for the diamonds.",
     "tmdb_rating": 7.7,
     "release_date": "1971-06-21",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/31648"
+    "runtime": 161,
+    "tmdb_url": "https://www.themoviedb.org/movie/31648",
+    "streaming_providers": []
   },
   "185031": {
     "tmdb_id": 1122030,
@@ -527,8 +587,10 @@
     "overview": "Dr. Watson, who served in the English armed forces and was in the Afghan war, retires and returns to his homeland, in England. Since the financial situation of the doctor is very precarious, his long-time friend Mr. Stamford offers him to rent a room in the house at 221-B Baker Street, which is rented by an elderly lady - Mrs. Hudson. The second rented room is already occupied by another gentleman - the mysterious Mr. Sherlock Holmes. Holmes makes an ambiguous impression on Watson. He conducts complex chemical experiments with blood, plays the violin, has the deepest knowledge about cigar ash, London dirt and criminal law, but at the same time demonstrates complete ignorance of well-known truths (for example, the fact that the Earth revolves around the Sun), does not read fiction, as well as books on history and philosophy. At the same time, very strange visitors constantly come to Holmes, and on the table he has portraits of personalities of a disgusting appearance.",
     "tmdb_rating": 7.7,
     "release_date": "1980-03-22",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/584549"
+    "runtime": 68,
+    "tmdb_url": "https://www.themoviedb.org/movie/584549",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "147328": {
     "tmdb_id": 127608,
@@ -537,7 +599,8 @@
     "tmdb_rating": 7.5,
     "release_date": "1983-06-25",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/127608"
+    "tmdb_url": "https://www.themoviedb.org/movie/127608",
+    "streaming_providers": []
   },
   "4945": {
     "tmdb_id": 10649,
@@ -627,7 +690,8 @@
     "tmdb_rating": 6.8,
     "release_date": "1978-12-21",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/40081"
+    "tmdb_url": "https://www.themoviedb.org/movie/40081",
+    "streaming_providers": []
   },
   "952": {
     "tmdb_id": 2897,
@@ -636,7 +700,8 @@
     "tmdb_rating": 6.7,
     "release_date": "1956-10-17",
     "runtime": 182,
-    "tmdb_url": "https://www.themoviedb.org/movie/2897"
+    "tmdb_url": "https://www.themoviedb.org/movie/2897",
+    "streaming_providers": []
   },
   "136598": {
     "tmdb_id": 296099,
@@ -644,8 +709,14 @@
     "overview": "Hoping to bring his family closer together and to recreate his childhood vacation for his own kids, a grown up Rusty Griswold takes his wife and their two sons on a cross-country road trip to the coolest theme park in America, Walley World. Needless to say, things don't go quite as planned.",
     "tmdb_rating": 6.3,
     "release_date": "2015-07-28",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/296099"
+    "runtime": 99,
+    "tmdb_url": "https://www.themoviedb.org/movie/296099",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      }
+    ]
   },
   "2133": {
     "tmdb_id": 14367,
@@ -654,7 +725,8 @@
     "tmdb_rating": 6.9,
     "release_date": "1987-07-01",
     "runtime": 102,
-    "tmdb_url": "https://www.themoviedb.org/movie/14367"
+    "tmdb_url": "https://www.themoviedb.org/movie/14367",
+    "streaming_providers": []
   },
   "59022": {
     "tmdb_id": 13335,
@@ -663,16 +735,18 @@
     "tmdb_rating": 6.3,
     "release_date": "2008-04-25",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/13335"
+    "tmdb_url": "https://www.themoviedb.org/movie/13335",
+    "streaming_providers": []
   },
   "141830": {
     "tmdb_id": 57778,
     "poster": "https://image.tmdb.org/t/p/w500/51iIpaPeoVj8yCo92GpWzUnPIiM.jpg",
     "overview": "In Italy, a dying woman tells her granddaughter that she hid her treasure many years ago in Russia, in the city of Leningrad. As more people learn about it, they head to Leningrad to find the lion where it is rumoured to be buried.",
-    "tmdb_rating": 7.2,
+    "tmdb_rating": 7.3,
     "release_date": "1974-01-31",
     "runtime": 102,
-    "tmdb_url": "https://www.themoviedb.org/movie/57778"
+    "tmdb_url": "https://www.themoviedb.org/movie/57778",
+    "streaming_providers": []
   },
   "2470": {
     "tmdb_id": 9671,
@@ -680,8 +754,9 @@
     "overview": "When a New York reporter plucks crocodile hunter Mick Dundee from the Australian Outback for a visit to the Big Apple, it's a clash of cultures and a recipe for good-natured comedy as na\u00efve Dundee negotiates the concrete jungle. He proves that his instincts are quite useful in the city and adeptly handles everything from wily muggers to high-society snoots without breaking a sweat.",
     "tmdb_rating": 6.4,
     "release_date": "1986-09-26",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/9671"
+    "runtime": 97,
+    "tmdb_url": "https://www.themoviedb.org/movie/9671",
+    "streaming_providers": []
   },
   "4734": {
     "tmdb_id": 2294,
@@ -695,11 +770,25 @@
   "5952": {
     "tmdb_id": 121,
     "poster": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
-    "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor. Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+    "overview": "Frodo Baggins and the other members of the Fellowship continue on their sacred quest to destroy the One Ring--but on separate paths. Their destinies lie at two towers--Orthanc Tower in Isengard, where the corrupt wizard Saruman awaits, and Sauron's fortress at Barad-dur, deep within the dark lands of Mordor.",
     "tmdb_rating": 8.4,
     "release_date": "2002-12-18",
     "runtime": 179,
-    "tmdb_url": "https://www.themoviedb.org/movie/121"
+    "tmdb_url": "https://www.themoviedb.org/movie/121",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      },
+      {
+        "name": "VI movies and tv",
+        "logo": "https://image.tmdb.org/t/p/w92/9SVVjJ89csOM0xoeVVK8BryUf9a.png"
+      }
+    ]
   },
   "2872": {
     "tmdb_id": 11527,
@@ -716,8 +805,14 @@
     "overview": "Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione's magical abilities and courage.",
     "tmdb_rating": 7.7,
     "release_date": "2002-11-13",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/672"
+    "runtime": 161,
+    "tmdb_url": "https://www.themoviedb.org/movie/672",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
   },
   "2140": {
     "tmdb_id": 11639,
@@ -735,7 +830,8 @@
     "tmdb_rating": 7.6,
     "release_date": "2002-02-12",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1161229"
+    "tmdb_url": "https://www.themoviedb.org/movie/1161229",
+    "streaming_providers": []
   },
   "74530": {
     "tmdb_id": 32657,
@@ -744,7 +840,8 @@
     "tmdb_rating": 6.2,
     "release_date": "2010-02-01",
     "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/32657"
+    "tmdb_url": "https://www.themoviedb.org/movie/32657",
+    "streaming_providers": []
   },
   "188833": {
     "tmdb_id": 297725,
@@ -780,7 +877,8 @@
     "tmdb_rating": 3.8,
     "release_date": "1993-08-14",
     "runtime": 88,
-    "tmdb_url": "https://www.themoviedb.org/movie/109560"
+    "tmdb_url": "https://www.themoviedb.org/movie/109560",
+    "streaming_providers": []
   },
   "3384": {
     "tmdb_id": 8333,
@@ -788,8 +886,10 @@
     "overview": "In New York, armed men hijack a subway car and demand a ransom for the passengers while the authorities question about the method of their escape.",
     "tmdb_rating": 7.5,
     "release_date": "1974-10-02",
-    "runtime": 105,
-    "tmdb_url": "https://www.themoviedb.org/movie/8333"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/8333",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "93838": {
     "tmdb_id": 94329,
@@ -797,8 +897,10 @@
     "overview": "Deep in the heart of Jakarta's slums lies an impenetrable safe house for the world's most dangerous killers and gangsters. Until now, the run-down apartment block has been considered untouchable to even the bravest of police. Cloaked under the cover of pre-dawn darkness and silence, an elite swat team is tasked with raiding the safe house in order to take down the notorious drug lord that runs it.  But when a chance encounter with a spotter blows their cover and news of their assault reaches the drug lord, the building's lights are cut and all the exits blocked. Stranded on the sixth floor with no way out, the unit must fight their way through the city's worst to survive their mission. Starring Indonesian martial arts sensation Iko Uwais.",
     "tmdb_rating": 7.4,
     "release_date": "2012-03-22",
-    "runtime": 101,
-    "tmdb_url": "https://www.themoviedb.org/movie/94329"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/94329",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "8142": {
     "tmdb_id": 11315,
@@ -820,12 +922,14 @@
   },
   "7482": {
     "tmdb_id": 9461,
-    "poster": "https://image.tmdb.org/t/p/w500/zN7OOSARMLVzl9xJqkW2CcZ3xhY.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/fyrh2ULEcmLpGTVLPQqFW45hqr5.jpg",
     "overview": "A martial artist agrees to spy on a reclusive crime lord using his invitation to a tournament there as cover.",
     "tmdb_rating": 7.4,
     "release_date": "1973-08-17",
     "runtime": 102,
-    "tmdb_url": "https://www.themoviedb.org/movie/9461"
+    "tmdb_url": "https://www.themoviedb.org/movie/9461",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "86628": {
     "tmdb_id": 51209,
@@ -842,8 +946,10 @@
     "overview": "Lola receives a phone call from her boyfriend Manni. He lost 100,000 DM in a subway train that belongs to a very bad guy. She has 20 minutes to raise this amount and meet Manni. Otherwise, he will rob a store to get the money. Three different alternatives may happen depending on some minor event along Lola's run.",
     "tmdb_rating": 7.3,
     "release_date": "1998-08-20",
-    "runtime": 80,
-    "tmdb_url": "https://www.themoviedb.org/movie/104"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/104",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "62849": {
     "tmdb_id": 13809,
@@ -870,7 +976,14 @@
     "tmdb_rating": 6.7,
     "release_date": "2002-10-02",
     "runtime": 92,
-    "tmdb_url": "https://www.themoviedb.org/movie/4108"
+    "tmdb_url": "https://www.themoviedb.org/movie/4108",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ],
+    "watchmode_sources": []
   },
   "32632": {
     "tmdb_id": 26332,
@@ -887,8 +1000,10 @@
     "overview": "After nearly two decades of legendary criminal feats, making him France's most notorious criminal while simultaneously feeding his desire for media attention and public adoration, Mesrine becomes increasingly paranoid and isolated, leading to a dramatic confrontation with the law that ultimately seals his fate as the nation's most infamous public enemy.",
     "tmdb_rating": 7.3,
     "release_date": "2008-11-19",
-    "runtime": 133,
-    "tmdb_url": "https://www.themoviedb.org/movie/15362"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/15362",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "3717": {
     "tmdb_id": 9679,
@@ -897,7 +1012,9 @@
     "tmdb_rating": 6.5,
     "release_date": "2000-06-09",
     "runtime": 118,
-    "tmdb_url": "https://www.themoviedb.org/movie/9679"
+    "tmdb_url": "https://www.themoviedb.org/movie/9679",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "2568": {
     "tmdb_id": 16379,
@@ -905,8 +1022,10 @@
     "overview": "Three youthful delinquents escape conviction for their crimes by teaming with the LAPD.",
     "tmdb_rating": 4.4,
     "release_date": "1999-03-26",
-    "runtime": 92,
-    "tmdb_url": "https://www.themoviedb.org/movie/16379"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/16379",
+    "streaming_providers": [],
+    "watchmode_sources": []
   },
   "1377": {
     "tmdb_id": 364,
@@ -1113,7 +1232,8 @@
     "tmdb_rating": 6.7,
     "release_date": "2002-05-10",
     "runtime": 105,
-    "tmdb_url": "https://www.themoviedb.org/movie/11880"
+    "tmdb_url": "https://www.themoviedb.org/movie/11880",
+    "streaming_providers": []
   },
   "72554": {
     "tmdb_id": 33273,
@@ -1405,12 +1525,13 @@
   },
   "7925": {
     "tmdb_id": 1059,
-    "poster": "https://image.tmdb.org/t/p/w500/olO4vMPKNIJQxhJh54TPQFwKpad.jpg",
+    "poster": "https://image.tmdb.org/t/p/w500/uQHej0cFJHwSuaENizIZpYtsuNa.jpg",
     "overview": "In feudal Japan, during a bloody war between clans, two cowardly and greedy peasants, soldiers of a defeated army, stumble upon a mysterious man who guides them to a fortress hidden in the mountains.",
     "tmdb_rating": 8.0,
     "release_date": "1958-12-28",
     "runtime": 139,
-    "tmdb_url": "https://www.themoviedb.org/movie/1059"
+    "tmdb_url": "https://www.themoviedb.org/movie/1059",
+    "streaming_providers": []
   },
   "3030": {
     "tmdb_id": 11878,
@@ -1419,7 +1540,8 @@
     "tmdb_rating": 8.1,
     "release_date": "1961-04-25",
     "runtime": 110,
-    "tmdb_url": "https://www.themoviedb.org/movie/11878"
+    "tmdb_url": "https://www.themoviedb.org/movie/11878",
+    "streaming_providers": []
   },
   "1198": {
     "tmdb_id": 85,
@@ -1428,7 +1550,13 @@
     "tmdb_rating": 7.9,
     "release_date": "1981-06-12",
     "runtime": 115,
-    "tmdb_url": "https://www.themoviedb.org/movie/85"
+    "tmdb_url": "https://www.themoviedb.org/movie/85",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      }
+    ]
   },
   "1291": {
     "tmdb_id": 89,
@@ -1437,7 +1565,13 @@
     "tmdb_rating": 7.9,
     "release_date": "1989-05-24",
     "runtime": 127,
-    "tmdb_url": "https://www.themoviedb.org/movie/89"
+    "tmdb_url": "https://www.themoviedb.org/movie/89",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      }
+    ]
   },
   "1387": {
     "tmdb_id": 578,
@@ -1446,7 +1580,17 @@
     "tmdb_rating": 7.7,
     "release_date": "1975-06-20",
     "runtime": 124,
-    "tmdb_url": "https://www.themoviedb.org/movie/578"
+    "tmdb_url": "https://www.themoviedb.org/movie/578",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      },
+      {
+        "name": "VI movies and tv",
+        "logo": "https://image.tmdb.org/t/p/w92/9SVVjJ89csOM0xoeVVK8BryUf9a.png"
+      }
+    ]
   },
   "7454": {
     "tmdb_id": 7131,
@@ -1508,8 +1652,9 @@
     "overview": "Two penniless orphans, Black and White, struggle to survive on the mean streets of Treasure Town. When a megacorporation threatens to tear down the town to build an amusement park, Black and White engage in the fight of their life.",
     "tmdb_rating": 7.4,
     "release_date": "2006-12-23",
-    "runtime": 103,
-    "tmdb_url": "https://www.themoviedb.org/movie/13754"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/13754",
+    "streaming_providers": []
   },
   "6686": {
     "tmdb_id": 10610,
@@ -1668,10 +1813,11 @@
     "tmdb_id": 21755,
     "poster": "https://image.tmdb.org/t/p/w500/xIz8iwzyjgWGzcIwHKpqhBs77ML.jpg",
     "overview": "The Brothers Bloom are the best con men in the world, swindling millionaires with complex scenarios of lust and intrigue. Now they've decided to take on one last job \u2013 showing a beautiful and eccentric heiress the time of her life with a romantic adventure that takes them around the world.",
-    "tmdb_rating": 6.5,
+    "tmdb_rating": 6.6,
     "release_date": "2008-09-09",
     "runtime": 114,
-    "tmdb_url": "https://www.themoviedb.org/movie/21755"
+    "tmdb_url": "https://www.themoviedb.org/movie/21755",
+    "streaming_providers": []
   },
   "101": {
     "tmdb_id": 13685,
@@ -1778,8 +1924,9 @@
     "overview": "In the deep south during the 1930s, three escaped convicts search for hidden treasure while a relentless lawman pursues them.",
     "tmdb_rating": 7.3,
     "release_date": "2000-08-30",
-    "runtime": 107,
-    "tmdb_url": "https://www.themoviedb.org/movie/134"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/134",
+    "streaming_providers": []
   },
   "8033": {
     "tmdb_id": 3001,
@@ -2040,7 +2187,22 @@
     "tmdb_rating": 8.4,
     "release_date": "2001-12-18",
     "runtime": 179,
-    "tmdb_url": "https://www.themoviedb.org/movie/120"
+    "tmdb_url": "https://www.themoviedb.org/movie/120",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      },
+      {
+        "name": "VI movies and tv",
+        "logo": "https://image.tmdb.org/t/p/w92/9SVVjJ89csOM0xoeVVK8BryUf9a.png"
+      }
+    ],
+    "watchmode_sources": []
   },
   "65685": {
     "tmdb_id": 2309,
@@ -2049,7 +2211,8 @@
     "tmdb_rating": 6.3,
     "release_date": "2008-12-11",
     "runtime": 106,
-    "tmdb_url": "https://www.themoviedb.org/movie/2309"
+    "tmdb_url": "https://www.themoviedb.org/movie/2309",
+    "streaming_providers": []
   },
   "118696": {
     "tmdb_id": 122917,
@@ -2076,7 +2239,8 @@
     "tmdb_rating": 7.1,
     "release_date": "1940-02-19",
     "runtime": 107,
-    "tmdb_url": "https://www.themoviedb.org/movie/12232"
+    "tmdb_url": "https://www.themoviedb.org/movie/12232",
+    "streaming_providers": []
   },
   "65651": {
     "tmdb_id": 16999,
@@ -2085,7 +2249,8 @@
     "tmdb_rating": 5.1,
     "release_date": "2008-09-18",
     "runtime": 84,
-    "tmdb_url": "https://www.themoviedb.org/movie/16999"
+    "tmdb_url": "https://www.themoviedb.org/movie/16999",
+    "streaming_providers": []
   },
   "1136": {
     "tmdb_id": 762,
@@ -2246,8 +2411,9 @@
     "overview": "Driven to rage over the tawdry excesses of reality television, a self-appointed cultural crusader kidnaps several very famous nobodies to make his point- but his crimes only generate more tabloid frenzy.",
     "tmdb_rating": 4.8,
     "release_date": "2015-06-12",
-    "runtime": 86,
-    "tmdb_url": "https://www.themoviedb.org/movie/323792"
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/323792",
+    "streaming_providers": []
   },
   "92637": {
     "tmdb_id": 54146,
@@ -2418,7 +2584,8 @@
     "tmdb_rating": 7.5,
     "release_date": "1993-09-10",
     "runtime": 94,
-    "tmdb_url": "https://www.themoviedb.org/movie/7500"
+    "tmdb_url": "https://www.themoviedb.org/movie/7500",
+    "streaming_providers": []
   },
   "3939": {
     "tmdb_id": 27764,
@@ -2764,64 +2931,76 @@
       }
     ]
   },
-  "179819": {
-    "tmdb_id": 181808,
-    "poster": "https://image.tmdb.org/t/p/w500/ySaaKHOLAQU5HoZqWmzDIj1VvZ1.jpg",
-    "overview": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
-    "tmdb_rating": 6.7,
-    "release_date": "2017-12-13",
-    "runtime": 152,
-    "tmdb_url": "https://www.themoviedb.org/movie/181808",
-    "streaming_providers": [
-      {
-        "name": "JioHotstar",
-        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
-      }
-    ]
-  },
-  "122924": {
-    "tmdb_id": 246655,
-    "poster": "https://image.tmdb.org/t/p/w500/ikA8UhYdTGpqbatFa93nIf6noSr.jpg",
-    "overview": "After the re-emergence of the world's first mutant, world-destroyer Apocalypse, the X-Men must unite to defeat his extinction level plan.",
-    "tmdb_rating": 6.5,
-    "release_date": "2016-05-18",
-    "runtime": 144,
-    "tmdb_url": "https://www.themoviedb.org/movie/246655",
-    "streaming_providers": [
-      {
-        "name": "JioHotstar",
-        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
-      }
-    ]
-  },
-  "1447": {
-    "tmdb_id": 12489,
-    "poster": "https://image.tmdb.org/t/p/w500/jlOL8fLsG0tGBtkj9qzHgqcHPVV.jpg",
-    "overview": "After a friend overdoses, Spoon and Stretch decide to kick their drug habits and attempt to enroll in a government detox program. Their efforts are hampered by seemingly endless red tape, as they are shuffled from one office to another while being chased by drug dealers and the police.",
-    "tmdb_rating": 6.6,
-    "release_date": "1997-01-29",
-    "runtime": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/12489",
-    "streaming_providers": []
-  },
-  "2280": {
-    "tmdb_id": 26618,
-    "poster": "https://image.tmdb.org/t/p/w500/6cxoftMuiwcQ9xzXfvGWAQfWUmK.jpg",
-    "overview": "Clay is a young man in a small town who witnesses his friend, Earl, kill himself because of the ongoing affair that Clay was having with the man's wife, Amanda. Feeling guilty, Clay now resists the widow when she presses him to continue with the affair. Clay unknowingly befriends a serial killer named Lester Long who murders the widow in an attempt to \"help\" his \"fishing buddy.\"",
-    "tmdb_rating": 6.2,
-    "release_date": "1998-09-25",
-    "runtime": 104,
-    "tmdb_url": "https://www.themoviedb.org/movie/26618",
-    "streaming_providers": []
-  },
-  "1662": {
-    "tmdb_id": 14398,
-    "poster": "https://image.tmdb.org/t/p/w500/zvl4RYK5OHo2d9V1aUkHkxhh9Zv.jpg",
-    "overview": "After murdering an undercover DEA agent, two corrupt cops scramble to cover up what they've done.",
+  "60074": {
+    "tmdb_id": 8960,
+    "poster": "https://image.tmdb.org/t/p/w500/7DyuV2G0hLEqHeueDfOqhZ2DVut.jpg",
+    "overview": "Hancock is a down-and-out superhero who's forced to employ a PR expert to help repair his image when the public grows weary of all the damage he's inflicted during his lifesaving heroics. The agent's idea of imprisoning the antihero to make the world miss him proves successful, but will Hancock stick to his new sense of purpose or slip back into old habits?",
     "tmdb_rating": 6.4,
-    "release_date": "1997-10-08",
-    "runtime": 111,
-    "tmdb_url": "https://www.themoviedb.org/movie/14398",
+    "release_date": "2008-07-01",
+    "runtime": 92,
+    "tmdb_url": "https://www.themoviedb.org/movie/8960",
+    "streaming_providers": [
+      {
+        "name": "Lionsgate Play",
+        "logo": "https://image.tmdb.org/t/p/w92/vvUYyCXlJMfKEo24vw4cEMavzvu.png"
+      },
+      {
+        "name": "Lionsgate Play Apple TV Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/55QivoAtXrlpjQpTFmXaGRSEsjR.png"
+      },
+      {
+        "name": "Lionsgate Play Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/w4gcxwOsvrlWQ2nhQ3Rk6xdS4VW.png"
+      },
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      }
+    ]
+  },
+  "91529": {
+    "tmdb_id": 49026,
+    "poster": "https://image.tmdb.org/t/p/w500/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
+    "overview": "Following the death of District Attorney Harvey Dent, Batman assumes responsibility for Dent's crimes to protect the late attorney's reputation and is subsequently hunted by the Gotham City Police Department. Eight years later, Batman encounters the mysterious Selina Kyle and the villainous Bane, a new terrorist leader who overwhelms Gotham's finest. The Dark Knight resurfaces to protect a city that has branded him an enemy.",
+    "tmdb_rating": 7.8,
+    "release_date": "2012-07-17",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/49026",
+    "streaming_providers": []
+  },
+  "119145": {
+    "tmdb_id": 207703,
+    "poster": "https://image.tmdb.org/t/p/w500/r6q9wZK5a2K51KFj4LWVID6Ja1r.jpg",
+    "overview": "The story of a super-secret spy organization that recruits an unrefined but promising street kid into the agency's ultra-competitive training program just as a global threat emerges from a twisted tech genius.",
+    "tmdb_rating": 7.6,
+    "release_date": "2015-01-24",
+    "runtime": 129,
+    "tmdb_url": "https://www.themoviedb.org/movie/207703",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
+  },
+  "112": {
+    "tmdb_id": 33542,
+    "poster": "https://image.tmdb.org/t/p/w500/1nAfchiXHQB3iyhK8fCJJEnNs5A.jpg",
+    "overview": "Keong comes from Hong Kong to visit New York for his uncle's wedding. His uncle runs a market in the Bronx and Keong offers to help out while Uncle is on his honeymoon. During his stay in the Bronx, Keong befriends a neighbor kid and beats up some neighborhood thugs who cause problems at the market. One of those petty thugs in the local gang stumbles into a criminal situation way over his head.",
+    "tmdb_rating": 6.9,
+    "release_date": "1995-01-21",
+    "runtime": 106,
+    "tmdb_url": "https://www.themoviedb.org/movie/33542",
+    "streaming_providers": []
+  },
+  "4799": {
+    "tmdb_id": 11576,
+    "poster": "https://image.tmdb.org/t/p/w500/j4mWzOisSHFkaqIkq34l2mm8a5K.jpg",
+    "overview": "A group of strangers come across a man dying after a car crash who proceeds to tell them about the $350,000 he buried in California. What follows is the madcap adventures of those strangers as each attempts to claim the prize for himself.",
+    "tmdb_rating": 7.0,
+    "release_date": "1963-11-07",
+    "runtime": 192,
+    "tmdb_url": "https://www.themoviedb.org/movie/11576",
     "streaming_providers": [
       {
         "name": "MGM Plus Amazon Channel",
@@ -2829,44 +3008,1620 @@
       }
     ]
   },
-  "79536": {
-    "tmdb_id": 25335,
-    "poster": "https://image.tmdb.org/t/p/w500/yafmxsqHx3IVqlMdoPpuvbvg3dv.jpg",
-    "overview": "In the mid-1960s, three small-time Finnish bootleggers seize control of their Helsinki neighborhood's black-market liquor business.",
+  "170": {
+    "tmdb_id": 10428,
+    "poster": "https://image.tmdb.org/t/p/w500/qfx2EENW1sOpKNVKLzr7VOhlxkt.jpg",
+    "overview": "Along with his new friends, a teenager who was arrested by the US Secret Service and banned from using a computer for writing a computer virus discovers a plot by a nefarious hacker, but they must use their computer skills to find the evidence while being pursued by the Secret Service and the evil computer genius behind the virus.",
     "tmdb_rating": 6.4,
-    "release_date": "2009-01-09",
-    "runtime": 136,
-    "tmdb_url": "https://www.themoviedb.org/movie/25335",
+    "release_date": "1995-09-14",
+    "runtime": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/10428",
+    "streaming_providers": [
+      {
+        "name": "MGM Plus Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/gk7O3l9qHttE9F3hgDNnhbhlOs7.png"
+      }
+    ]
+  },
+  "464": {
+    "tmdb_id": 2019,
+    "poster": "https://image.tmdb.org/t/p/w500/mXCM7pmUFUGp7QzSmare3RITe6n.jpg",
+    "overview": "When a woman's father goes missing, she enlists a local to aid in her search.  The pair soon discover that her father has died at the hands of a wealthy sportsman who hunts homeless men as a form of recreation.",
+    "tmdb_rating": 6.5,
+    "release_date": "1993-04-27",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/2019",
     "streaming_providers": []
   },
-  "5590": {
-    "tmdb_id": 29515,
-    "poster": "https://image.tmdb.org/t/p/w500/xcS9bxWGFzC3cA7qAOjcIjKajSf.jpg",
-    "overview": "A recently-released convict becomes the most powerful pimp in Oakland, but tragedy ensues when his activities draw the ire of two corrupt cops and the crime lord he once worked for.",
-    "tmdb_rating": 6.4,
-    "release_date": "1973-04-04",
-    "runtime": 110,
-    "tmdb_url": "https://www.themoviedb.org/movie/29515",
+  "53972": {
+    "tmdb_id": 1571,
+    "poster": "https://image.tmdb.org/t/p/w500/31TT47YjBl7a7uvJ3ff1nrirXhP.jpg",
+    "overview": "John McClane is back and badder than ever, and this time he calls on the services of a young hacker in his bid to stop a ring of Internet terrorists intent on taking control of America's computer infrastructure.",
+    "tmdb_rating": 6.6,
+    "release_date": "2007-06-20",
+    "runtime": 128,
+    "tmdb_url": "https://www.themoviedb.org/movie/1571",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
+  },
+  "62299": {
+    "tmdb_id": 12683,
+    "poster": "https://image.tmdb.org/t/p/w500/dGKQoqyYnleFrz3DIBANG00QccO.jpg",
+    "overview": "When the night falls, and the creatures of the dark are crawling out of the shadows, there is only one man who stands between us and evil: Edward Carnby.",
+    "tmdb_rating": 3.5,
+    "release_date": "2008-09-01",
+    "runtime": 88,
+    "tmdb_url": "https://www.themoviedb.org/movie/12683",
     "streaming_providers": []
   },
-  "147300": {
-    "tmdb_id": 270393,
-    "poster": "https://image.tmdb.org/t/p/w500/nivYCAN2wtrrNh5zHnV1xNRjSvx.jpg",
-    "overview": "This film version was released before the premiere of the full two-part television version (The Adventures of Sherlock Holmes and Dr. Watson: The Twentieth Century Approaches). In this version the entire plot of the story Bruce-Partington Drawings was deleted.",
-    "tmdb_rating": 7.1,
-    "release_date": "1987-04-01",
-    "runtime": 149,
-    "tmdb_url": "https://www.themoviedb.org/movie/270393",
+  "3563": {
+    "tmdb_id": 9456,
+    "poster": "https://image.tmdb.org/t/p/w500/5JkLJ0HS1hGxZHok9pjBcLCpLuX.jpg",
+    "overview": "Alex Corvis, a man wrongly executed for the murder of his girlfriend, returns from the dead and sets out to find the real killer.",
+    "tmdb_rating": 5.5,
+    "release_date": "2000-01-23",
+    "runtime": 101,
+    "tmdb_url": "https://www.themoviedb.org/movie/9456",
     "streaming_providers": []
   },
-  "5888": {
-    "tmdb_id": 20992,
-    "poster": "https://image.tmdb.org/t/p/w500/dxeVQdd227B367xQxvabkYTfz0b.jpg",
-    "overview": "Danila goes to his successful brother, Victor, in Petersburg to start a new life. Unknown to Danila, Victor is a contract killer, but is in hiding after asking for too much money to assassinate a Chechen mob boss. To avoid exposure, Victor convinces Danila to kill the boss instead.",
+  "166558": {
+    "tmdb_id": 346672,
+    "poster": "https://image.tmdb.org/t/p/w500/v1ciDCWMG47gdT4kMyjyQbnLQQn.jpg",
+    "overview": "Vampire death dealer Selene fends off brutal attacks from both the Lycan clan and the Vampire faction that betrayed her. With her only allies, David and his father Thomas, she must stop the eternal war between Lycans and Vampires, even if it means she has to make the ultimate sacrifice.",
+    "tmdb_rating": 5.9,
+    "release_date": "2016-11-24",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/346672",
+    "streaming_providers": []
+  },
+  "59129": {
+    "tmdb_id": 9017,
+    "poster": "https://image.tmdb.org/t/p/w500/rwWEsWV1DNCqZudEiHvk1NPeUla.jpg",
+    "overview": "In a seedy bar in a town ravaged by war, scientist and businessman Hunt hires mercenary and former Royal Marine D.C. to assemble a crack team of ex-soldiers to protect him on a dangerous journey into no-man's land. Their mission is to scope out an old military bunker in Eastern Europe. It should be easy \u2013 48 hours at the most. Lots of cash for little risk. Or so he says...",
+    "tmdb_rating": 5.9,
+    "release_date": "2008-03-11",
+    "runtime": 90,
+    "tmdb_url": "https://www.themoviedb.org/movie/9017",
+    "streaming_providers": []
+  },
+  "179491": {
+    "tmdb_id": 429733,
+    "poster": "https://image.tmdb.org/t/p/w500/yFmzgX2YLWnsCi1csyKPNBHPVYB.jpg",
+    "overview": "A virus spreads through an office complex causing white collar workers to act out their worst impulses.",
+    "tmdb_rating": 6.5,
+    "release_date": "2017-11-10",
+    "runtime": 87,
+    "tmdb_url": "https://www.themoviedb.org/movie/429733",
+    "streaming_providers": []
+  },
+  "6835": {
+    "tmdb_id": 26289,
+    "poster": "https://image.tmdb.org/t/p/w500/mqaooY0SlOfSejCMV5BMIwXLskL.jpg",
+    "overview": "A pair of newspaper reporters receive help from an unlikely accomplice in their effort to stave off an alien invasion.",
+    "tmdb_rating": 4.5,
+    "release_date": "2008-09-16",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/26289",
+    "streaming_providers": []
+  },
+  "6872": {
+    "tmdb_id": 11059,
+    "poster": "https://image.tmdb.org/t/p/w500/jmRjnbrcP85xV6LBtsVTM1BVOxM.jpg",
+    "overview": "On an island off the coast, a techno rave party attracts a diverse group of college coeds and a Coast Guard officer. Soon, they discover that their X-laced escapades are to be interrupted by zombies and monsters that attack them on the ground, from the air, and in the sea, ruled by an evil entity.",
+    "tmdb_rating": 3.1,
+    "release_date": "2003-04-11",
+    "runtime": 90,
+    "tmdb_url": "https://www.themoviedb.org/movie/11059",
+    "streaming_providers": []
+  },
+  "100906": {
+    "tmdb_id": 28090,
+    "poster": "https://image.tmdb.org/t/p/w500/NWeLUBpxn7lcMpCPvnTGmtHwmj.jpg",
+    "overview": "Undead cop Matt Cordell rises from the grave, and is after the criminals who murdered him in prison.",
+    "tmdb_rating": 5.9,
+    "release_date": "1990-07-18",
+    "runtime": 87,
+    "tmdb_url": "https://www.themoviedb.org/movie/28090",
+    "streaming_providers": []
+  },
+  "63826": {
+    "tmdb_id": 13220,
+    "poster": "https://image.tmdb.org/t/p/w500/tFNReQlU92jmN7uuR1HHLiFkEua.jpg",
+    "overview": "When their plans for a nature trip go awry, Polly and boyfriend Seth decide to check into a motel. On their way, they're carjacked and kidnapped by low-rent crooks Dennis and Lacey, who take the victims and their SUV to a nearby gas station. Along the way, they encounter an increasingly terrifying horde of parasites, and if any of them intend to survive, they'll have to outsmart the deadly organisms.",
+    "tmdb_rating": 6.2,
+    "release_date": "2008-10-31",
+    "runtime": 82,
+    "tmdb_url": "https://www.themoviedb.org/movie/13220",
+    "streaming_providers": []
+  },
+  "6502": {
+    "tmdb_id": 170,
+    "poster": "https://image.tmdb.org/t/p/w500/sQckQRt17VaWbo39GIu0TMOiszq.jpg",
+    "overview": "Twenty-eight days after a killer virus was accidentally unleashed from a British research facility, a small group of London survivors are caught in a desperate struggle to protect themselves from the infected. Carried by animals and humans, the virus turns those it infects into homicidal maniacs -- and it's absolutely impossible to contain.",
+    "tmdb_rating": 7.2,
+    "release_date": "2002-10-31",
+    "runtime": 113,
+    "tmdb_url": "https://www.themoviedb.org/movie/170",
+    "streaming_providers": [
+      {
+        "name": "Amazon Prime Video",
+        "logo": "https://image.tmdb.org/t/p/w92/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "logo": "https://image.tmdb.org/t/p/w92/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+      }
+    ]
+  },
+  "71535": {
+    "tmdb_id": 19908,
+    "poster": "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg",
+    "overview": "Columbus has made a habit of running from what scares him. Tallahassee doesn't have fears. If he did, he'd kick their ever-living ass. In a world overrun by zombies, these two are perfectly evolved survivors. But now, they're about to stare down the most terrifying prospect of all: each other.",
+    "tmdb_rating": 7.3,
+    "release_date": "2009-10-02",
+    "runtime": 88,
+    "tmdb_url": "https://www.themoviedb.org/movie/19908",
+    "streaming_providers": [
+      {
+        "name": "Amazon Prime Video",
+        "logo": "https://image.tmdb.org/t/p/w92/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+      },
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      },
+      {
+        "name": "Sony Liv",
+        "logo": "https://image.tmdb.org/t/p/w92/coM4QWbmIOa0xJ5cGR9BRmoV25B.png"
+      },
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "logo": "https://image.tmdb.org/t/p/w92/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+      }
+    ]
+  },
+  "6722": {
+    "tmdb_id": 10618,
+    "poster": "https://image.tmdb.org/t/p/w500/jvrQXnpgSpKXQ3fkz5p6RV8jZJa.jpg",
+    "overview": "Wong Fei-Hung faces the White Lotus Society, a fanatical cult seeking to drive the Europeans out of China through violence, even attacking Chinese who follow Western ways. Wong must also defend revolutionary Dr. Sun Yat Sen from the military.",
+    "tmdb_rating": 7.2,
+    "release_date": "1992-04-16",
+    "runtime": 113,
+    "tmdb_url": "https://www.themoviedb.org/movie/10618",
+    "streaming_providers": []
+  },
+  "940": {
+    "tmdb_id": 10907,
+    "poster": "https://image.tmdb.org/t/p/w500/c7LX3GMf9uXQTgVm3uxpm7E6Woc.jpg",
+    "overview": "Robin Hood fights nobly for justice against the evil Sir Guy of Gisbourne while striving to win the hand of the beautiful Maid Marian.",
     "tmdb_rating": 7.5,
-    "release_date": "1997-12-12",
-    "runtime": 96,
-    "tmdb_url": "https://www.themoviedb.org/movie/20992",
+    "release_date": "1938-05-13",
+    "runtime": 102,
+    "tmdb_url": "https://www.themoviedb.org/movie/10907",
     "streaming_providers": []
+  },
+  "8167": {
+    "tmdb_id": 16905,
+    "poster": "https://image.tmdb.org/t/p/w500/Ae0ltppMl66pAH1odgDU1C4H1iq.jpg",
+    "overview": "Dr. Peter Blood, unjustly convicted of treason and exiled from England, becomes a notorious pirate.",
+    "tmdb_rating": 7.2,
+    "release_date": "1935-12-26",
+    "runtime": 119,
+    "tmdb_url": "https://www.themoviedb.org/movie/16905",
+    "streaming_providers": []
+  },
+  "8235": {
+    "tmdb_id": 22596,
+    "poster": "https://image.tmdb.org/t/p/w500/fEt5HWJ32ek8ibef7zSZnA00Jp0.jpg",
+    "overview": "When a store clerk organizes a contest to climb the outside of a tall building, circumstances force him to make the perilous climb himself.",
+    "tmdb_rating": 7.7,
+    "release_date": "1923-03-12",
+    "runtime": 73,
+    "tmdb_url": "https://www.themoviedb.org/movie/22596",
+    "streaming_providers": []
+  },
+  "3996": {
+    "tmdb_id": 146,
+    "poster": "https://image.tmdb.org/t/p/w500/iNDVBFNz4XyYzM9Lwip6atSTFqf.jpg",
+    "overview": "Two warriors in pursuit of a stolen sword and a notorious fugitive are led to an impetuous, physically-skilled, teenage nobleman's daughter, who is at a crossroads in her life.",
+    "tmdb_rating": 7.4,
+    "release_date": "2000-07-06",
+    "runtime": 120,
+    "tmdb_url": "https://www.themoviedb.org/movie/146",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+        "name": "Amazon Prime Video",
+        "logo": "https://image.tmdb.org/t/p/w92/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+      },
+      {
+        "name": "Sony Liv",
+        "logo": "https://image.tmdb.org/t/p/w92/coM4QWbmIOa0xJ5cGR9BRmoV25B.png"
+      },
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "logo": "https://image.tmdb.org/t/p/w92/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+      }
+    ]
+  },
+  "8983": {
+    "tmdb_id": 9550,
+    "poster": "https://image.tmdb.org/t/p/w500/93feGsGiCtG5ymrRcErUgBsdo6v.jpg",
+    "overview": "In 9th century China, a corrupt government wages war against a rebel army called the Flying Daggers. A romantic warrior breaks a beautiful rebel out of prison to help her rejoin her fellows, but things are not what they seem.",
+    "tmdb_rating": 7.3,
+    "release_date": "2004-07-16",
+    "runtime": 119,
+    "tmdb_url": "https://www.themoviedb.org/movie/9550",
+    "streaming_providers": []
+  },
+  "89862": {
+    "tmdb_id": 58699,
+    "poster": "https://image.tmdb.org/t/p/w500/4bGB2k4JngWLVABKIw1S7cnlh5h.jpg",
+    "overview": "Two friends spend all their free time building flame-throwers and weapons of mass destruction in hopes that a global apocalypse will occur and clear the runway for their imaginary gang \"Mother Medusa\".",
+    "tmdb_rating": 5.9,
+    "release_date": "2011-04-16",
+    "runtime": 106,
+    "tmdb_url": "https://www.themoviedb.org/movie/58699",
+    "streaming_providers": []
+  },
+  "31664": {
+    "tmdb_id": 10951,
+    "poster": "https://image.tmdb.org/t/p/w500/oZzsnCPFfGg9uoRLRwQLZxju4d.jpg",
+    "overview": "When Ah Bu, a girl from a small fishing town in Taiwan, finds a glass bottle with a romantic message, she travels to Hong Kong to find her prince charming. As it turns out, her prince charming, Albert, happens to be gay. But all is not lost when Ah Bu meets the dashing Chi Wu. Meanwhile, Ah Bu's boyfriend from Taiwan comes looking for her, as the action and romance follow Ah Bu back to Taiwan.",
+    "tmdb_rating": 6.5,
+    "release_date": "1999-02-12",
+    "runtime": 121,
+    "tmdb_url": "https://www.themoviedb.org/movie/10951",
+    "streaming_providers": [
+      {
+        "name": "Amazon Prime Video",
+        "logo": "https://image.tmdb.org/t/p/w92/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "logo": "https://image.tmdb.org/t/p/w92/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+      },
+      {
+        "name": "Brew",
+        "logo": "https://image.tmdb.org/t/p/w92/mwGw3KrIZxnACdeojp2a5cO41hi.png"
+      }
+    ]
+  },
+  "155509": {
+    "tmdb_id": 333385,
+    "poster": "https://image.tmdb.org/t/p/w500/aSx5YUCLcSUAR4nt93aeIpZYHF6.jpg",
+    "overview": "A girl falls for the \"perfect\" guy, who happens to have a very fatal flaw: he's a hitman on the run from the crime cartels who employ him.",
+    "tmdb_rating": 6.4,
+    "release_date": "2016-02-29",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/333385",
+    "streaming_providers": []
+  },
+  "4299": {
+    "tmdb_id": 9476,
+    "poster": "https://image.tmdb.org/t/p/w500/srb1XnrlDZHcdpjBKqUu4qAzxKU.jpg",
+    "overview": "William Thatcher, a knight's peasant apprentice, gets a chance at glory when the knight dies suddenly mid-tournament. Posing as a knight himself, William won't stop until he's crowned tournament champion\u2014assuming matters of the heart don't get in the way.",
+    "tmdb_rating": 6.9,
+    "release_date": "2001-05-11",
+    "runtime": 133,
+    "tmdb_url": "https://www.themoviedb.org/movie/9476",
+    "streaming_providers": []
+  },
+  "91485": {
+    "tmdb_id": 76163,
+    "poster": "https://image.tmdb.org/t/p/w500/74rTIGyGoIu5KSxDVMdr8H3MtMo.jpg",
+    "overview": "Mr. Church reunites the Expendables for what should be an easy paycheck, but when one of their men is murdered on the job, their quest for revenge puts them deep in enemy territory and up against an unexpected threat.",
+    "tmdb_rating": 6.4,
+    "release_date": "2012-08-15",
+    "runtime": 103,
+    "tmdb_url": "https://www.themoviedb.org/movie/76163",
+    "streaming_providers": [
+      {
+        "name": "Lionsgate Play Apple TV Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/55QivoAtXrlpjQpTFmXaGRSEsjR.png"
+      },
+      {
+        "name": "Lionsgate Play Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/w4gcxwOsvrlWQ2nhQ3Rk6xdS4VW.png"
+      }
+    ]
+  },
+  "79274": {
+    "tmdb_id": 40662,
+    "poster": "https://image.tmdb.org/t/p/w500/7lmHqHg1rG9b4U8MjuyQjmJ7Qm0.jpg",
+    "overview": "One part vigilante, one part criminal kingpin, Red Hood begins cleaning up Gotham with the efficiency of Batman, but without following the same ethical code.",
+    "tmdb_rating": 7.8,
+    "release_date": "2010-07-27",
+    "runtime": 75,
+    "tmdb_url": "https://www.themoviedb.org/movie/40662",
+    "streaming_providers": []
+  },
+  "98607": {
+    "tmdb_id": 71883,
+    "poster": "https://image.tmdb.org/t/p/w500/yUkH0y9OsY7J08Dvfzi1P0di559.jpg",
+    "overview": "A daredevil driver is determined to compete in Redline, the most popular race in the galaxy. The race only occurs every five years, but in order to participate he must overcome the mafia, the government and even love.",
+    "tmdb_rating": 7.5,
+    "release_date": "2009-08-14",
+    "runtime": 102,
+    "tmdb_url": "https://www.themoviedb.org/movie/71883",
+    "streaming_providers": []
+  },
+  "95499": {
+    "tmdb_id": 34433,
+    "poster": "https://image.tmdb.org/t/p/w500/6iO8TJCyLI4BiPYOvdwzPV2bhoV.jpg",
+    "overview": "While the Saiyan Paragus persuades Vegeta to rule a new planet, King Kai alerts Goku of the South Galaxy's destruction by an unknown Super Saiyan.",
+    "tmdb_rating": 7.3,
+    "release_date": "1993-03-06",
+    "runtime": 70,
+    "tmdb_url": "https://www.themoviedb.org/movie/34433",
+    "streaming_providers": []
+  },
+  "95771": {
+    "tmdb_id": 44251,
+    "poster": "https://image.tmdb.org/t/p/w500/Apnw8FWoPOIsu14d5dvaNZzFSJE.jpg",
+    "overview": "A Saiyan Space pod crash-lands on Earth out of which a wounded Saiyan crawls: Broly, the Legendary Super Saiyan. The wounded Broly shouts out in frustration and turns into normal form. The place soon freezes, trapping him in it and he falls into a coma.",
+    "tmdb_rating": 6.8,
+    "release_date": "1994-03-12",
+    "runtime": 48,
+    "tmdb_url": "https://www.themoviedb.org/movie/44251",
+    "streaming_providers": []
+  },
+  "95473": {
+    "tmdb_id": 39103,
+    "poster": "https://image.tmdb.org/t/p/w500/ipfeRIqcBj5NfCLkTtg39enfJV2.jpg",
+    "overview": "Cooler has resurrected himself as a robot and is enslaving the people of New Namek. Goku and the gang must help.",
+    "tmdb_rating": 6.5,
+    "release_date": "1992-03-07",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/39103",
+    "streaming_providers": []
+  },
+  "1419": {
+    "tmdb_id": 36040,
+    "poster": "https://image.tmdb.org/t/p/w500/24vooYt5StgtgcQObVr1GHuM5gy.jpg",
+    "overview": "Under the pretense of having a picnic, a geologist takes his teenage daughter and 6-year-old son into the Australian outback and attempts to shoot them. When he fails, he turns the gun on himself, and the two city-bred children must contend with harsh wilderness alone. They are saved by a chance encounter with an Aboriginal boy who shows them how to survive, and in the process underscores the disharmony between nature and modern life.",
+    "tmdb_rating": 7.3,
+    "release_date": "1971-07-01",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/36040",
+    "streaming_providers": []
+  },
+  "147374": {
+    "tmdb_id": 315623,
+    "poster": "https://image.tmdb.org/t/p/w500/3yJ2HKPsIXYhn8cqTClvvuoZyX7.jpg",
+    "overview": "It's Christmas Eve, 1938, when Madge Arwell comes to the aid of an injured Spaceman Angel as she cycles home. He promises to repay her kindness - all she has to do is make a wish.",
+    "tmdb_rating": 7.0,
+    "release_date": "2011-12-25",
+    "runtime": 59,
+    "tmdb_url": "https://www.themoviedb.org/movie/315623",
+    "streaming_providers": []
+  },
+  "1931": {
+    "tmdb_id": 12311,
+    "poster": "https://image.tmdb.org/t/p/w500/GD98ozz6F6tSu8BWGulpseEKhv.jpg",
+    "overview": "Fletcher Christian successfully leads a revolt against the ruthless Captain Bligh on the HMS Bounty. However, Bligh returns one year later, hell bent on revenge.",
+    "tmdb_rating": 7.4,
+    "release_date": "1935-11-22",
+    "runtime": 132,
+    "tmdb_url": "https://www.themoviedb.org/movie/12311",
+    "streaming_providers": []
+  },
+  "3347": {
+    "tmdb_id": 14280,
+    "poster": "https://image.tmdb.org/t/p/w500/e61tGxVtobTQuFPmAC7xWwdC4O1.jpg",
+    "overview": "A scientific researcher, sent on a government study: The Lupus Project, must investigate the possible \"menace\" of wolves in the north. To do so, he must survive in the wilderness for six months on his own. In the course of these events, he learns about the true beneficial and positive nature of the wolf species.",
+    "tmdb_rating": 7.0,
+    "release_date": "1983-10-07",
+    "runtime": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/14280",
+    "streaming_providers": []
+  },
+  "1303": {
+    "tmdb_id": 983,
+    "poster": "https://image.tmdb.org/t/p/w500/1FCpHiZSez9iaLpDmvyrNt9lBua.jpg",
+    "overview": "Tired of life as soldiers, Peachy Carnehan and Danny Dravot travel to the isolated land of Kafiristan, where they are ultimately embraced by the people and revered as rulers. After a series of misunderstandings, the natives come to believe that Dravot is a god, but he and Carnehan can't keep up their deception forever.",
+    "tmdb_rating": 7.5,
+    "release_date": "1975-12-03",
+    "runtime": 129,
+    "tmdb_url": "https://www.themoviedb.org/movie/983",
+    "streaming_providers": [
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      }
+    ]
+  },
+  "1259": {
+    "tmdb_id": 235,
+    "poster": "https://image.tmdb.org/t/p/w500/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg",
+    "overview": "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives.",
+    "tmdb_rating": 7.8,
+    "release_date": "1986-08-08",
+    "runtime": 89,
+    "tmdb_url": "https://www.themoviedb.org/movie/235",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      }
+    ]
+  },
+  "7063": {
+    "tmdb_id": 2000,
+    "poster": "https://image.tmdb.org/t/p/w500/zU1FLiGJw3m3iFrakwA0SzFvIPV.jpg",
+    "overview": "A few decades after the destruction of the Inca Empire, a Spanish expedition led by the infamous Aguirre leaves the mountains of Peru and goes down the Amazon River in search of the lost city of El Dorado. When great difficulties arise, Aguirre\u2019s men start to wonder whether their quest will lead them to prosperity or certain death.",
+    "tmdb_rating": 7.4,
+    "release_date": "1972-12-29",
+    "runtime": 95,
+    "tmdb_url": "https://www.themoviedb.org/movie/2000",
+    "streaming_providers": []
+  },
+  "25834": {
+    "tmdb_id": 16515,
+    "poster": "https://image.tmdb.org/t/p/w500/qhJNHLwIcMqDKBwsr9uMDOumO33.jpg",
+    "overview": "Harvey, the arrogant and spoiled son of an indulgent absentee-father, falls overboard from a transatlantic steamship and is rescued by a fishing vessel on the Grand Banks. Harvey fails to persuade them to take him ashore, nor convince the crew of his wealth. The captain offers him a low-paid job, until they return to port, as part of the crew that turns him into a mature, considerate young man.",
+    "tmdb_rating": 7.4,
+    "release_date": "1937-06-25",
+    "runtime": 115,
+    "tmdb_url": "https://www.themoviedb.org/movie/16515",
+    "streaming_providers": []
+  },
+  "5839": {
+    "tmdb_id": 12716,
+    "poster": "https://image.tmdb.org/t/p/w500/4zwgcaKqIJ5GB6kCPpyMLZuNyoi.jpg",
+    "overview": "Raised by his science teacher father, Joseph Pagnol, and seamstress mother Augustine, young Marcel grows up during the turn of the century in awe of his rationalist dad. When the family takes a summer vacation in the countryside, Marcel becomes friends with Lili, who teaches him about rural life.",
+    "tmdb_rating": 7.3,
+    "release_date": "1990-08-29",
+    "runtime": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/12716",
+    "streaming_providers": []
+  },
+  "7087": {
+    "tmdb_id": 15927,
+    "poster": "https://image.tmdb.org/t/p/w500/rvBWlGRKte2U6qElHV13h6JvmSe.jpg",
+    "overview": "Cultural mistrust and false accusations doom a friendship in British colonial India between an Indian doctor, an Englishwoman engaged to marry a city magistrate, and an English educator.",
+    "tmdb_rating": 6.8,
+    "release_date": "1984-12-14",
+    "runtime": 163,
+    "tmdb_url": "https://www.themoviedb.org/movie/15927",
+    "streaming_providers": [
+      {
+        "name": "MGM Plus Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/gk7O3l9qHttE9F3hgDNnhbhlOs7.png"
+      }
+    ]
+  },
+  "2966": {
+    "tmdb_id": 404,
+    "poster": "https://image.tmdb.org/t/p/w500/tT9cMiVDdtlcdZxOoFy3VRmEoKk.jpg",
+    "overview": "Retired farmer and widower Alvin Straight learns one day that his estranged brother Lyle has suffered a severe stroke. Alvin is determined to make things right with Lyle while he still can, but his brother lives in Wisconsin, while Alvin is stuck in Iowa with no car and no driver's license. He then has the idea of making the trip on his old lawnmower, thus beginning a picturesque and at times deeply spiritual odyssey.",
+    "tmdb_rating": 7.7,
+    "release_date": "1999-10-15",
+    "runtime": 112,
+    "tmdb_url": "https://www.themoviedb.org/movie/404",
+    "streaming_providers": []
+  },
+  "139385": {
+    "tmdb_id": 281957,
+    "poster": "https://image.tmdb.org/t/p/w500/ji3ecJphATlVgWNY0B0RVXZizdf.jpg",
+    "overview": "In the 1820s, a frontiersman, Hugh Glass, sets out on a path of vengeance against those who left him for dead after a bear mauling.",
+    "tmdb_rating": 7.5,
+    "release_date": "2015-12-25",
+    "runtime": 157,
+    "tmdb_url": "https://www.themoviedb.org/movie/281957",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      }
+    ]
+  },
+  "3470": {
+    "tmdb_id": 9764,
+    "poster": "https://image.tmdb.org/t/p/w500/bIOrDQ3Gg68k3qJAnRU7nIZr0BW.jpg",
+    "overview": "A military explorer meets and befriends a Goldi man in Russia\u2019s unmapped forests. A deep and abiding bond evolves between the two men, one civilized in the usual sense, the other at home in the glacial Siberian woods.",
+    "tmdb_rating": 7.9,
+    "release_date": "1975-08-02",
+    "runtime": 141,
+    "tmdb_url": "https://www.themoviedb.org/movie/9764",
+    "streaming_providers": []
+  },
+  "105197": {
+    "tmdb_id": 129670,
+    "poster": "https://image.tmdb.org/t/p/w500/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
+    "overview": "An aging, booze-addled father takes a trip from Montana to Nebraska with his estranged son in order to claim what he believes to be a million-dollar sweepstakes prize.",
+    "tmdb_rating": 7.4,
+    "release_date": "2013-09-21",
+    "runtime": 115,
+    "tmdb_url": "https://www.themoviedb.org/movie/129670",
+    "streaming_providers": []
+  },
+  "131714": {
+    "tmdb_id": 308504,
+    "poster": "https://image.tmdb.org/t/p/w500/kDDwAQHkqPy8RYQc38lFTuRw8Ro.jpg",
+    "overview": "When an evil emperor executes their leader, his band of knights \u2013 bound by duty and honour \u2013 embarks on a journey of vengeance that will not come to an end until they've destroyed their mortal foe.",
+    "tmdb_rating": 6.4,
+    "release_date": "2015-04-03",
+    "runtime": 115,
+    "tmdb_url": "https://www.themoviedb.org/movie/308504",
+    "streaming_providers": []
+  },
+  "147662": {
+    "tmdb_id": 48300,
+    "poster": "https://image.tmdb.org/t/p/w500/qupi6LGWSMSTaZHWPYUyAyVplLx.jpg",
+    "overview": "After the events of The One-Armed Swordsman (1967), a retired Fang Gang is drawn back into the jianghu to protect various young apprentices whose swordsmanship schools have been terrorized by 8 evil swordsmen seeking to rule the jianghu.",
+    "tmdb_rating": 6.6,
+    "release_date": "1969-02-28",
+    "runtime": 106,
+    "tmdb_url": "https://www.themoviedb.org/movie/48300",
+    "streaming_providers": []
+  },
+  "4367": {
+    "tmdb_id": 1995,
+    "poster": "https://image.tmdb.org/t/p/w500/sJpl1EfHGZhbKtZ3fWTlwrpM1tH.jpg",
+    "overview": "Orphaned heiress, English aristocrat and intrepid archaeologist, Lara Croft, embarks on a dangerous quest to retrieve the two halves of an ancient artifact which controls time before it falls into the wrong hands. As an extremely rare planetary alignment is about to occur for the first time in 5,000 years, the fearless tomb raider will have to team up with rival adventurers and sworn enemies to collect the pieces, while time is running out. But, in the end, who can harness the archaic talisman's unlimited power?",
+    "tmdb_rating": 5.9,
+    "release_date": "2001-06-15",
+    "runtime": 100,
+    "tmdb_url": "https://www.themoviedb.org/movie/1995",
+    "streaming_providers": []
+  },
+  "27837": {
+    "tmdb_id": 11866,
+    "poster": "https://image.tmdb.org/t/p/w500/pcj6unMsKCw0ogWFlUXmbc9gKap.jpg",
+    "overview": "When an oil rig in the Gobi Desert of Mongolia proves unproductive, an aircraft crew are sent to shut the operation down and fly them out. On the flight out over the desert on the way to Beijing, Capt. Frank Towns and co-pilot A.J. are unable to keep their cargo plane, a C-119 Flying Boxcar, in the air when a violent sandstorm strikes. Crash-landing in a remote uncharted part of the desert, the two pilots and their passengers -- a crew of oil workers and a drifter -- must work together to survive by rebuilding the aircraft. Soon, low supplies and a band of merciless smugglers add even greater urgency to their task.",
+    "tmdb_rating": 6.0,
+    "release_date": "2004-12-17",
+    "runtime": 113,
+    "tmdb_url": "https://www.themoviedb.org/movie/11866",
+    "streaming_providers": []
+  },
+  "5657": {
+    "tmdb_id": 896453,
+    "poster": "https://image.tmdb.org/t/p/w500/rH3Svoode1JouAuns60wZqFn6gO.jpg",
+    "overview": "Movie description unavailable.",
+    "tmdb_rating": 3.0,
+    "release_date": "2025-09-05",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/896453",
+    "streaming_providers": []
+  },
+  "2890": {
+    "tmdb_id": 6415,
+    "poster": "https://image.tmdb.org/t/p/w500/fClJQW8xn8wHOFqoA4jUn0PZh1f.jpg",
+    "overview": "A group of American soldiers stationed in Iraq at the end of the Gulf War find a map they believe will take them to a huge cache of stolen Kuwaiti gold hidden near their base, and they embark on a secret mission that's destined to change everything.",
+    "tmdb_rating": 6.6,
+    "release_date": "1999-09-27",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/6415",
+    "streaming_providers": []
+  },
+  "6990": {
+    "tmdb_id": 5698,
+    "poster": "https://image.tmdb.org/t/p/w500/vEYr1sJR1dOFGXwXawpBN6hDRGF.jpg",
+    "overview": "After the train station clerk is assaulted and left bound and gagged, then the departing train and its passengers robbed, a posse goes in hot pursuit of the fleeing bandits.",
+    "tmdb_rating": 7.0,
+    "release_date": "1903-12-07",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/5698",
+    "streaming_providers": []
+  },
+  "114678": {
+    "tmdb_id": 254375,
+    "poster": "https://image.tmdb.org/t/p/w500/lymRg46xAt6s9ApWa9MBcgnzXAS.jpg",
+    "overview": "Hector is a quirky psychiatrist who has become increasingly tired of his humdrum life. As he tells his girlfriend, Clara, he feels like a fraud: he hasn\u2019t really tasted life, and yet he\u2019s offering advice to patients who are just not getting any happier. So Hector decides to break out of his deluded and routine driven life. Armed with buckets of courage and child-like curiosity, he embarks on a global quest in hopes of uncovering the elusive secret formula for true happiness. And so begins a larger than life adventure with riotously funny results.",
+    "tmdb_rating": 6.7,
+    "release_date": "2014-08-14",
+    "runtime": 114,
+    "tmdb_url": "https://www.themoviedb.org/movie/254375",
+    "streaming_providers": []
+  },
+  "2905": {
+    "tmdb_id": 11712,
+    "poster": "https://image.tmdb.org/t/p/w500/zW47oIH3bc3ggmmmzTvKqM4Fqjk.jpg",
+    "overview": "In this companion piece and sequel to \"Yojimbo,\" jaded samurai Sanjuro helps an idealistic group of young warriors weed out their clan's evil influences, and in the process turns their image of a proper samurai on its ear.",
+    "tmdb_rating": 7.9,
+    "release_date": "1962-01-01",
+    "runtime": 96,
+    "tmdb_url": "https://www.themoviedb.org/movie/11712",
+    "streaming_providers": []
+  },
+  "128908": {
+    "tmdb_id": 117098,
+    "poster": "https://image.tmdb.org/t/p/w500/x4vlDX1xc0ZPRYnzyiGMpUOBSPv.jpg",
+    "overview": "When Dot's granddaughter puts her into a nursing home, Stella stages a breakout, and takes Dot to Canada so they can get married. They pick up a hitchhiker along the way.",
+    "tmdb_rating": 6.4,
+    "release_date": "2011-09-23",
+    "runtime": 93,
+    "tmdb_url": "https://www.themoviedb.org/movie/117098",
+    "streaming_providers": []
+  },
+  "6448": {
+    "tmdb_id": 10243,
+    "poster": "https://image.tmdb.org/t/p/w500/zrzLl7NWdjwGhVE7bqpOAxMVtF.jpg",
+    "overview": "A cargo aircraft crashes in a sandstorm in the Sahara with less than a dozen men on board. One of the passengers is an airplane designer who comes up with the idea of ripping off the undamaged wing and using it as the basis for a replacement aircraft they need to build before their food and water run out.",
+    "tmdb_rating": 7.2,
+    "release_date": "1965-12-15",
+    "runtime": 142,
+    "tmdb_url": "https://www.themoviedb.org/movie/10243",
+    "streaming_providers": []
+  },
+  "5493": {
+    "tmdb_id": 24130,
+    "poster": "https://image.tmdb.org/t/p/w500/fnZyHB7SdfZSlQJmw6PVhzsebIr.jpg",
+    "overview": "Flint is again called out of retirement when his old boss finds that he seems to have missed 3 Minutes while golfing with the President. Flint finds that the President has been replaced by an actor (Flint's line [with a wistful look] is \"An Actor as President?\") Flint finds that a group of women have banded together to take over the world through subliminal brainwashing in beauty salons they own.",
+    "tmdb_rating": 6.2,
+    "release_date": "1967-03-15",
+    "runtime": 114,
+    "tmdb_url": "https://www.themoviedb.org/movie/24130",
+    "streaming_providers": []
+  },
+  "106918": {
+    "tmdb_id": 116745,
+    "poster": "https://image.tmdb.org/t/p/w500/iAo1hlzsPV9XpYcLQp6Ud065tGO.jpg",
+    "overview": "A timid magazine photo manager who lives life vicariously through daydreams embarks on a true-life adventure when a negative goes missing.",
+    "tmdb_rating": 7.2,
+    "release_date": "2013-12-18",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/116745",
+    "streaming_providers": []
+  },
+  "1884": {
+    "tmdb_id": 1878,
+    "poster": "https://image.tmdb.org/t/p/w500/tisNLcMkxryU2zxhi0PiyDFqhm0.jpg",
+    "overview": "Raoul Duke and his attorney Dr. Gonzo drive a red convertible across the Mojave desert to Las Vegas with a suitcase full of drugs to cover a motorcycle race. As their consumption of drugs increases at an alarming rate, the stoned duo trash their hotel room and fear legal repercussions. Duke begins to drive back to L.A., but after an odd run-in with a cop, he returns to Sin City and continues his wild drug binge.",
+    "tmdb_rating": 7.2,
+    "release_date": "1998-05-22",
+    "runtime": 118,
+    "tmdb_url": "https://www.themoviedb.org/movie/1878",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
+  },
+  "33138": {
+    "tmdb_id": 13073,
+    "poster": "https://image.tmdb.org/t/p/w500/yqcNYtm3F7GhCgAnTcQslKzMFOf.jpg",
+    "overview": "Aviva is thirteen, awkward and sensitive. Her mother Joyce is warm and loving, as is her father, Steve, a regular guy who does have a fierce temper from time to time. The film revolves around her family, friends and neighbors.",
+    "tmdb_rating": 6.2,
+    "release_date": "2005-03-09",
+    "runtime": 100,
+    "tmdb_url": "https://www.themoviedb.org/movie/13073",
+    "streaming_providers": []
+  },
+  "82765": {
+    "tmdb_id": 35138,
+    "poster": "https://image.tmdb.org/t/p/w500/uCSQnopQPIw58RKTfzoRYxq9It5.jpg",
+    "overview": "The story of a farmer forced into conscription, who has been looking to get out of the army ever since. His great chance arrives when he stumbles upon a wounded general from an enemy state, and he kidnaps him, intending to claim credit for the capture, which includes five acres of land, and most importantly, honorable discharge from the army.",
+    "tmdb_rating": 6.9,
+    "release_date": "2010-02-14",
+    "runtime": 96,
+    "tmdb_url": "https://www.themoviedb.org/movie/35138",
+    "streaming_providers": [
+      {
+        "name": "Amazon Prime Video",
+        "logo": "https://image.tmdb.org/t/p/w92/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+      },
+      {
+        "name": "Amazon Prime Video with Ads",
+        "logo": "https://image.tmdb.org/t/p/w92/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+      }
+    ]
+  },
+  "133867": {
+    "tmdb_id": 248574,
+    "poster": "https://image.tmdb.org/t/p/w500/8emz9dKW8KKIqG8WcFG1lJbr2ub.jpg",
+    "overview": "A 16-year-old international assassin yearning for a \"normal\" adolescence fakes her own death and enrolls as a senior in a suburban high school. She quickly learns that being popular can be more painful than getting water-boarded.",
+    "tmdb_rating": 5.7,
+    "release_date": "2015-04-23",
+    "runtime": 98,
+    "tmdb_url": "https://www.themoviedb.org/movie/248574",
+    "streaming_providers": []
+  },
+  "102338": {
+    "tmdb_id": 45736,
+    "poster": "https://image.tmdb.org/t/p/w500/f6IALg4S0qujZha9xbFBLnELksZ.jpg",
+    "overview": "There is no place more hallowed in the martial art world than China's Shaolin Temple. This special place deserves a special epic, which is what the martial arts maestro delivers in this battle between a brave brand of Chinese boxers and literally thousands of Qing troops - complete with betrayals, intrigues, and such novel fighting machines as 108 wooden robots. The conflicts grow in complexity, intensity and even suspense as monks struggle to stay alive in the face of overwhelming odds.",
+    "tmdb_rating": 6.2,
+    "release_date": "1976-12-22",
+    "runtime": 126,
+    "tmdb_url": "https://www.themoviedb.org/movie/45736",
+    "streaming_providers": []
+  },
+  "2019": {
+    "tmdb_id": 346,
+    "poster": "https://image.tmdb.org/t/p/w500/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
+    "overview": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
+    "tmdb_rating": 8.5,
+    "release_date": "1954-04-26",
+    "runtime": 207,
+    "tmdb_url": "https://www.themoviedb.org/movie/346",
+    "streaming_providers": []
+  },
+  "4634": {
+    "tmdb_id": 37146,
+    "poster": "https://image.tmdb.org/t/p/w500/UAa8AVZfNiISv3K8eKfyuzSAxI.jpg",
+    "overview": "The \"bad boys of magic\" go over the edge in this mind-blowing, role-switching comedy murder mystery set in the dizzying world of Atlantic City casinos. In a TV interview, Penn mentions his idea of a fun practical joke: \"I wish someone were trying to kill me. It would give focus to my life, excitement. I'd be like James Bond.\" Twenty million people hear him. One decides to deliver a punchline he'll never forget. Made by people who thought Psycho was a comedy, Penn & Teller Get Killed (they also wrote the piece) features Caitlin Clarke as the femme fatale and David Patrick Kelly as the Edgar Allan Poe-esque nutcase with a new mission. Arthur Penn, known for hip masterpieces like Bonnie and Clyde, Alice's Restaurant and Little Big Man, directs with roller-coaster pacing and subversive intelligence.",
+    "tmdb_rating": 5.6,
+    "release_date": "1989-09-22",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/37146",
+    "streaming_providers": []
+  },
+  "2150": {
+    "tmdb_id": 8393,
+    "poster": "https://image.tmdb.org/t/p/w500/IgBfj5LfT7nwpodCZ34QCHp17x.jpg",
+    "overview": "A Coca-Cola bottle dropped from an airplane raises havoc among a normally peaceful tribe of African bushmen who believe it to be a utensil of the gods.",
+    "tmdb_rating": 7.3,
+    "release_date": "1980-09-10",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/8393",
+    "streaming_providers": []
+  },
+  "89305": {
+    "tmdb_id": 69798,
+    "poster": "https://image.tmdb.org/t/p/w500/nePYsVp0qU8EbSXeUdr3xEkHlzN.jpg",
+    "overview": "High school graduation just wouldn\u2019t be complete without an unchaperoned, uninhibited and unforgettable final holiday. At least that\u2019s what Will, Jay, Simon and Neil think when they book a two-week stay on an exotic Greek island. As their dreams of sun-drenched days and booze-filled nights are left hopelessly unfulfilled, the lads fight their way into the party scene with hilariously humiliating results.",
+    "tmdb_rating": 6.2,
+    "release_date": "2011-08-19",
+    "runtime": 97,
+    "tmdb_url": "https://www.themoviedb.org/movie/69798",
+    "streaming_providers": []
+  },
+  "105254": {
+    "tmdb_id": 157409,
+    "poster": "https://image.tmdb.org/t/p/w500/jX34ccG13P66S4qVqLRRyR0hZLS.jpg",
+    "overview": "Jamie is a boorish, insensitive American twentysomething traveling in Chile, who somehow manages to create chaos at every turn. He and his friends are planning on taking a road trip north to experience a legendary shamanistic hallucinogen called the San Pedro cactus. In a fit of drunkenness at a wild party, Jamie invites an eccentric woman\u2014a radical spirit named Crystal Fairy\u2014to come along.",
+    "tmdb_rating": 5.9,
+    "release_date": "2013-07-12",
+    "runtime": 99,
+    "tmdb_url": "https://www.themoviedb.org/movie/157409",
+    "streaming_providers": []
+  },
+  "8807": {
+    "tmdb_id": 11282,
+    "poster": "https://image.tmdb.org/t/p/w500/5vO7R4xYlDipTp8gzfRbWegO8eb.jpg",
+    "overview": "Nerdy accountant Harold and his irrepressible friend, Kumar, get stoned watching television and find themselves utterly bewitched by a commercial for White Castle. Convinced there must be one nearby, the two set out on a late-night odyssey that takes them deep into New Jersey. Somehow, the boys manage to run afoul of rednecks, cops and even a car-stealing Neil Patrick Harris before getting anywhere near their beloved sliders.",
+    "tmdb_rating": 6.6,
+    "release_date": "2004-07-02",
+    "runtime": 88,
+    "tmdb_url": "https://www.themoviedb.org/movie/11282",
+    "streaming_providers": []
+  },
+  "7317": {
+    "tmdb_id": 9352,
+    "poster": "https://image.tmdb.org/t/p/w500/iLdO4PwbZCCQSa9rchZMwuJm9xe.jpg",
+    "overview": "When Scott learns that his longtime cyber-buddy from Berlin is a gorgeous young woman, he and his friends embark on a trip across Europe.",
+    "tmdb_rating": 6.6,
+    "release_date": "2004-02-20",
+    "runtime": 92,
+    "tmdb_url": "https://www.themoviedb.org/movie/9352",
+    "streaming_providers": []
+  },
+  "231": {
+    "tmdb_id": 8467,
+    "poster": "https://image.tmdb.org/t/p/w500/4LdpBXiCyGKkR8FGHgjKlphrfUc.jpg",
+    "overview": "Lloyd and Harry are two men whose stupidity is really indescribable. When Mary, a beautiful woman, loses an important suitcase with money before she leaves for Aspen, the two friends (who have found the suitcase) decide to return it to her. After some \"adventures\" they finally get to Aspen where, using the lost money they live it up and fight for Mary's heart.",
+    "tmdb_rating": 6.7,
+    "release_date": "1994-12-16",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/8467",
+    "streaming_providers": []
+  },
+  "5490": {
+    "tmdb_id": 19133,
+    "poster": "https://image.tmdb.org/t/p/w500/rcwW5YBEGvWPx8NBN5PxdvoYc0F.jpg",
+    "overview": "A nuclear-powered bus is making its maiden non-stop trip from New York to Denver. The journey is plagued by disasters due to the machinations of a mysterious group allied with the oil lobby. Will the down-on-his-luck driver, with a reputation for eating his passengers, be able to complete the journey?",
+    "tmdb_rating": 5.3,
+    "release_date": "1976-06-23",
+    "runtime": 88,
+    "tmdb_url": "https://www.themoviedb.org/movie/19133",
+    "streaming_providers": []
+  },
+  "142550": {
+    "tmdb_id": 315841,
+    "poster": "https://image.tmdb.org/t/p/w500/kMPpxlQhsqzImbhctl3lDrOHoQZ.jpg",
+    "overview": "Ryuzo and his 7 former henchmen are all retired yakuza, but they now live as regular old men. One day, Ryuzo becomes the victim of a phishing fraud. He calls his 7 men together to reform their society.",
+    "tmdb_rating": 6.2,
+    "release_date": "2015-04-25",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/315841",
+    "streaming_providers": []
+  },
+  "2924": {
+    "tmdb_id": 11230,
+    "poster": "https://image.tmdb.org/t/p/w500/cf43J2SH8tECZVl9N5n0Q6Ckche.jpg",
+    "overview": "After getting into trouble, a mischievous young man is sent to train under a brutal, but slovenly old beggar, who teaches him the secret of the Drunken Fist.",
+    "tmdb_rating": 7.4,
+    "release_date": "1978-10-05",
+    "runtime": 111,
+    "tmdb_url": "https://www.themoviedb.org/movie/11230",
+    "streaming_providers": [
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
+  },
+  "150993": {
+    "tmdb_id": 284514,
+    "poster": "https://image.tmdb.org/t/p/w500/fRAlUIsJ0yfcAslfMIZOPm6ftUS.jpg",
+    "overview": "Adolfo, a thirty something security guard, is going through a bad patch. Not only his lifetime girlfriend has just to finished with him to be a guy with no ambition but, moreover, he becomes the target of a series of thugs led by V\u00e1zquez, a dangerous criminal who has just escaped from jail. Also he discovers that his father has a double identity. He is not a farmer engaged in the production of cold meat \u2013 as Adolfo has believed all his life, but Anacleto, a secret agent who is a bit down and the man who locked V\u00e1zquez up in jail thirty years ago. Adolfo will have to leave his comfort zone and work with his father, the person that Adolfo get on worse with in the world to survive the revenge of Vazquez and while, between shootouts and chases, trying to get his girlfriend back.",
+    "tmdb_rating": 5.7,
+    "release_date": "2015-09-04",
+    "runtime": 94,
+    "tmdb_url": "https://www.themoviedb.org/movie/284514",
+    "streaming_providers": [
+      {
+        "name": "Lionsgate Play",
+        "logo": "https://image.tmdb.org/t/p/w92/vvUYyCXlJMfKEo24vw4cEMavzvu.png"
+      },
+      {
+        "name": "VI movies and tv",
+        "logo": "https://image.tmdb.org/t/p/w92/9SVVjJ89csOM0xoeVVK8BryUf9a.png"
+      },
+      {
+        "name": "Lionsgate Play Apple TV Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/55QivoAtXrlpjQpTFmXaGRSEsjR.png"
+      },
+      {
+        "name": "Lionsgate Play Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/w4gcxwOsvrlWQ2nhQ3Rk6xdS4VW.png"
+      }
+    ]
+  },
+  "4717": {
+    "tmdb_id": 19267,
+    "poster": "https://image.tmdb.org/t/p/w500/jFl2hmGWFX9mw0NvOOn08Zr8bn5.jpg",
+    "overview": "A young Asian American martial artist is forced to participate in a brutal formal street-fight competition.",
+    "tmdb_rating": 5.9,
+    "release_date": "1980-08-18",
+    "runtime": 95,
+    "tmdb_url": "https://www.themoviedb.org/movie/19267",
+    "streaming_providers": []
+  },
+  "4583": {
+    "tmdb_id": 30352,
+    "poster": "https://image.tmdb.org/t/p/w500/rQHt9X3Q4NhDe6LotqUDiZme2l8.jpg",
+    "overview": "Lou Diamond Phillips and Fred Gwynne team up with a gang of professional criminals who have everything it takes to rob a bank. The only things they do have going for them are a cop and his partner, who are dumber than they are! By the time the gang hits the bank vault, it's a safe bet there's going to be organized insanity and disorganized crime!",
+    "tmdb_rating": 5.4,
+    "release_date": "1989-04-14",
+    "runtime": 98,
+    "tmdb_url": "https://www.themoviedb.org/movie/30352",
+    "streaming_providers": []
+  },
+  "8117": {
+    "tmdb_id": 250,
+    "poster": "https://image.tmdb.org/t/p/w500/v78NxEyzsElWnwSvGWpvf2DCzP9.jpg",
+    "overview": "Arvid is an ordinary bank clerk who lives a rather unassuming life with his dear girlfriend. But his life is turned completely upside down when he bravely manages to avert a robbery against the bank where he works.",
+    "tmdb_rating": 7.3,
+    "release_date": "1999-09-10",
+    "runtime": 91,
+    "tmdb_url": "https://www.themoviedb.org/movie/250",
+    "streaming_providers": []
+  },
+  "42946": {
+    "tmdb_id": 21519,
+    "poster": "https://image.tmdb.org/t/p/w500/AvTu2bmJbVZGXPxdx6VllGXCtLG.jpg",
+    "overview": "In late 19th century Hong Kong, the British may rule the land, but the pirates rule the waters. Coast Guard officer Dragon Ma is determined that his beloved Coast Guard will not be made a fool of.",
+    "tmdb_rating": 7.3,
+    "release_date": "1983-12-22",
+    "runtime": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/21519",
+    "streaming_providers": []
+  },
+  "6618": {
+    "tmdb_id": 11770,
+    "poster": "https://image.tmdb.org/t/p/w500/z6ZQqwoxWy9muIxwUP4K2zWw7BU.jpg",
+    "overview": "A young Shaolin follower reunites with his discouraged brothers to form a soccer team using their martial art skills to their advantage.",
+    "tmdb_rating": 7.2,
+    "release_date": "2001-07-05",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/11770",
+    "streaming_providers": []
+  },
+  "76251": {
+    "tmdb_id": 23483,
+    "poster": "https://image.tmdb.org/t/p/w500/iHMbrTHJwocsNvo5murCBw0CwTo.jpg",
+    "overview": "Dave Lizewski is an unnoticed high school student and comic book fan who one day decides to become a super-hero, even though he has no powers, training or meaningful reason to do so.",
+    "tmdb_rating": 7.1,
+    "release_date": "2010-03-26",
+    "runtime": 118,
+    "tmdb_url": "https://www.themoviedb.org/movie/23483",
+    "streaming_providers": []
+  },
+  "160271": {
+    "tmdb_id": 302699,
+    "poster": "https://image.tmdb.org/t/p/w500/hXQVMbRNpf7c93e8clMY4W5DRm6.jpg",
+    "overview": "Calvin Joyner, a mild-mannered accountant whose high school glory days are long behind him, reconnects with an awkward pal from high school through Facebook. After meeting up, Calvin\u2019s mundane life takes an unexpectedly thrilling turn when he's thrust into the world of international espionage.",
+    "tmdb_rating": 6.4,
+    "release_date": "2016-06-15",
+    "runtime": 107,
+    "tmdb_url": "https://www.themoviedb.org/movie/302699",
+    "streaming_providers": []
+  },
+  "2457": {
+    "tmdb_id": 15698,
+    "poster": "https://image.tmdb.org/t/p/w500/nSiRjhc7aTVPonXAhmTZAPqd2jT.jpg",
+    "overview": "Two street-wise Chicago cops have to shake off some rust after returning from a Key West vacation to pursue a drug dealer that nearly killed them in the past.",
+    "tmdb_rating": 6.1,
+    "release_date": "1986-06-27",
+    "runtime": 107,
+    "tmdb_url": "https://www.themoviedb.org/movie/15698",
+    "streaming_providers": [
+      {
+        "name": "MGM Plus Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/gk7O3l9qHttE9F3hgDNnhbhlOs7.png"
+      }
+    ]
+  },
+  "4846": {
+    "tmdb_id": 12780,
+    "poster": "https://image.tmdb.org/t/p/w500/qXYISomt08V5PUqCzYRLVSQZmWP.jpg",
+    "overview": "In this Hong Kong variation of Robin Hood, corrupt officials of a Chinese village are robbed by a masked bandit known as \"Iron Monkey\", named after a benevolent deity. When all else fails, the Governor forces a traveling physician into finding the bandit.",
+    "tmdb_rating": 7.4,
+    "release_date": "1993-09-03",
+    "runtime": 90,
+    "tmdb_url": "https://www.themoviedb.org/movie/12780",
+    "streaming_providers": []
+  },
+  "3972": {
+    "tmdb_id": 12207,
+    "poster": "https://image.tmdb.org/t/p/w500/xqUBrSBtPYLvCtfqHF5sapU6Div.jpg",
+    "overview": "Returning home with his father after a shopping expedition, Wong Fei-Hong is unwittingly caught up in the battle between foreigners who wish to export ancient Chinese artifacts and loyalists who don't want the pieces to leave the country. Fei-Hong must fight against the foreigners using his Drunken Boxing style, and overcome his father's antagonism as well.",
+    "tmdb_rating": 7.5,
+    "release_date": "1994-02-03",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/12207",
+    "streaming_providers": []
+  },
+  "170817": {
+    "tmdb_id": 373569,
+    "poster": "https://image.tmdb.org/t/p/w500/gsleO1KultziWltEAngAEZkxQhf.jpg",
+    "overview": "When her boyfriend dumps Emily, a spontaneous woman in her 30s, she persuades her ultra-cautious mom to accompany her on a vacation to Ecuador. When these two very different women are trapped on this wild journey, their bond as mother and daughter is tested and strengthened while they attempt to navigate the jungle and escape.",
+    "tmdb_rating": 5.3,
+    "release_date": "2017-05-03",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/373569",
+    "streaming_providers": []
+  },
+  "31878": {
+    "tmdb_id": 9470,
+    "poster": "https://image.tmdb.org/t/p/w500/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg",
+    "overview": "It's the 1940s, and the notorious Axe Gang terrorizes Shanghai. Small-time criminals Sing and Bone hope to join, but they only manage to make lots of very dangerous enemies. Fortunately for them, kung fu masters and hidden strength can be found in unlikely places. Now they just have to take on the entire Axe Gang.",
+    "tmdb_rating": 7.5,
+    "release_date": "2004-02-10",
+    "runtime": 99,
+    "tmdb_url": "https://www.themoviedb.org/movie/9470",
+    "streaming_providers": [
+      {
+        "name": "Sony Pictures Amazon Channel",
+        "logo": "https://image.tmdb.org/t/p/w92/eBWPJM5uHLjiuYmPQKz8LPLza7o.png"
+      }
+    ]
+  },
+  "72171": {
+    "tmdb_id": 24804,
+    "poster": "https://image.tmdb.org/t/p/w500/u3oWQDz0JggzzsVlsuHY7XVxp5Y.jpg",
+    "overview": "This is the story of 1970s African-American action legend Black Dynamite. The Man killed his brother, pumped heroin into local orphanages, and flooded the ghetto with adulterated malt liquor. Black Dynamite was the one hero willing to fight The Man all the way from the blood-soaked city streets to the hallowed halls of the Honky House.",
+    "tmdb_rating": 7.1,
+    "release_date": "2009-10-16",
+    "runtime": 85,
+    "tmdb_url": "https://www.themoviedb.org/movie/24804",
+    "streaming_providers": []
+  },
+  "7844": {
+    "tmdb_id": 17653,
+    "poster": "https://image.tmdb.org/t/p/w500/hdAqW3qn0Y9jNMjDob5ae0NRa0F.jpg",
+    "overview": "The secret Red Lotus Flower Society is committed to the overthrow of the evil Manchu Emperor and his minions. One of his Governors is sent on a mission to retrieve a list of members of that secret society. Meanwhile, Canton kung fu practitioner Fong Sai-Yuk falls in love with the beautiful daughter of a rich merchant.",
+    "tmdb_rating": 7.0,
+    "release_date": "1993-03-04",
+    "runtime": 106,
+    "tmdb_url": "https://www.themoviedb.org/movie/17653",
+    "streaming_providers": []
+  },
+  "3752": {
+    "tmdb_id": 2123,
+    "poster": "https://image.tmdb.org/t/p/w500/rvRrcbLbpn7UJGRH1JupgHOeJFq.jpg",
+    "overview": "Rhode Island State Trooper Charlie Baileygates has a multiple personality disorder. One personality is crazy and aggressive, while the other is more friendly and laid back. Both of these personalities fall in love with the same woman named Irene after Charlie loses his medication.",
+    "tmdb_rating": 6.6,
+    "release_date": "2000-06-22",
+    "runtime": 117,
+    "tmdb_url": "https://www.themoviedb.org/movie/2123",
+    "streaming_providers": []
+  },
+  "3417": {
+    "tmdb_id": 11570,
+    "poster": "https://image.tmdb.org/t/p/w500/lOSqs9ntb2wB7gveCx2l7cqC1nG.jpg",
+    "overview": "Burt Lancaster plays a pirate with a taste for intrigue and acrobatics who involves himself in the goings on of a revolution in the Caribbean in the late 1700s. A light hearted adventure involving prison breaks, an oddball scientist, sailing ships, naval fights and tons of swordplay.",
+    "tmdb_rating": 7.0,
+    "release_date": "1952-09-27",
+    "runtime": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/11570",
+    "streaming_providers": []
+  },
+  "3036": {
+    "tmdb_id": 62204,
+    "poster": "https://image.tmdb.org/t/p/w500/tyzW1M00xfHKNtmTlT6wJ3F4pNr.jpg",
+    "overview": "In the prehistoric world, a Cro-Magnon tribe depends on an ever-burning source of fire, which eventually extinguishes. Lacking the knowledge to start a new fire, the tribe sends three warriors on a quest for more. With the tribe's future at stake, the warriors make their way across a treacherous landscape full of hostile tribes and monstrous beasts. On their journey, they encounter Ika, a woman who has the knowledge they seek.",
+    "tmdb_rating": 7.0,
+    "release_date": "1981-12-16",
+    "runtime": 100,
+    "tmdb_url": "https://www.themoviedb.org/movie/62204",
+    "streaming_providers": [
+      {
+        "name": "Artiflix",
+        "logo": "https://image.tmdb.org/t/p/w92/hO4tZhtSJ7VrVnJusimkY3MltSx.png"
+      }
+    ]
+  },
+  "7386": {
+    "tmdb_id": 6844,
+    "poster": "https://image.tmdb.org/t/p/w500/3Ei59AR64x6dMZfWobPCkZjbqTL.jpg",
+    "overview": "Escaping death, a Hebrew infant is raised in a royal household to become a prince. Upon discovery of his true heritage, Moses embarks on a personal quest to reclaim his destiny as the leader and liberator of the Hebrew people.",
+    "tmdb_rating": 7.8,
+    "release_date": "1956-10-05",
+    "runtime": 220,
+    "tmdb_url": "https://www.themoviedb.org/movie/6844",
+    "streaming_providers": []
+  },
+  "5446": {
+    "tmdb_id": 9555,
+    "poster": "https://image.tmdb.org/t/p/w500/vs8ATIRGEEYpcByrNtJ1WyI3LeD.jpg",
+    "overview": "In 1931, three Aboriginal girls escape after being plucked from their homes to be trained as domestic staff, and set off on a trek across the Outback.",
+    "tmdb_rating": 7.0,
+    "release_date": "2002-02-04",
+    "runtime": 94,
+    "tmdb_url": "https://www.themoviedb.org/movie/9555",
+    "streaming_providers": []
+  },
+  "102194": {
+    "tmdb_id": 103731,
+    "poster": "https://image.tmdb.org/t/p/w500/o2jT5jQdKh1HAF0fMKuGwBOwOYB.jpg",
+    "overview": "Two teenage boys find a fugitive hiding out on an island in the Mississippi River and help him reunite with his lover and escape an avenging family and their armed posse.",
+    "tmdb_rating": 7.1,
+    "release_date": "2013-04-26",
+    "runtime": 130,
+    "tmdb_url": "https://www.themoviedb.org/movie/103731",
+    "streaming_providers": []
+  },
+  "8341": {
+    "tmdb_id": 10949,
+    "poster": "https://image.tmdb.org/t/p/w500/wkMdDqXI58MuW99wi9kotC8kCVM.jpg",
+    "overview": "When 9-year-old orphan Oliver Twist dares to ask his cruel taskmaster, Mr. Bumble, for a second serving of gruel, he's hired out as an apprentice. Escaping that dismal fate, young Oliver falls in with the street urchin known as the Artful Dodger and his criminal mentor, Fagin. When kindly Mr. Brownlow takes Oliver in, Fagin's evil henchman Bill Sikes plots to kidnap the boy.",
+    "tmdb_rating": 7.6,
+    "release_date": "1948-06-28",
+    "runtime": 121,
+    "tmdb_url": "https://www.themoviedb.org/movie/10949",
+    "streaming_providers": []
+  },
+  "3418": {
+    "tmdb_id": 1541,
+    "poster": "https://image.tmdb.org/t/p/w500/7D2DqmIKpPlkCU0RLVdlKLKR7XZ.jpg",
+    "overview": "Taking a break from their dreary lives, close friends Thelma and Louise embark on a short weekend trip that ends in unforeseen incriminating circumstances. As fugitives, both women rediscover the strength of their bond and their newfound resilience.",
+    "tmdb_rating": 7.6,
+    "release_date": "1991-05-24",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/1541",
+    "streaming_providers": []
+  },
+  "134515": {
+    "tmdb_id": 17381,
+    "poster": "https://image.tmdb.org/t/p/w500/4WdK6WHPRncDiE8ngspO4EE8fH9.jpg",
+    "overview": "Teens P.J. and Goose get their thrills on BMX bikes, performing hair-raising tricks all across Sydney, Australia. Along with their new friend Judy, they discover a box of walkie-talkies -- and find out that a gang of criminals intends to use them to monitor police signals during a bank robbery. When the young trio snatches the devices, it propels them on a hair-raising adventure in which their pedaling skills might just save their necks.",
+    "tmdb_rating": 5.6,
+    "release_date": "1983-12-29",
+    "runtime": 92,
+    "tmdb_url": "https://www.themoviedb.org/movie/17381",
+    "streaming_providers": []
+  },
+  "43836": {
+    "tmdb_id": 12096,
+    "poster": "https://image.tmdb.org/t/p/w500/57ViRkdsddHLK32W8Nf3ZPLSAu4.jpg",
+    "overview": "When the coach of the France football team is killed by a poisoned dart in the stadium at the end of a game, and his huge, expensive ring with the Pink Panther diamond  disappears, the ambitious Chief Inspector Dreyfus assigns the worst police inspector \u2013 Jacques Clouseau \u2013 to the case.",
+    "tmdb_rating": 5.9,
+    "release_date": "2006-02-10",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/12096",
+    "streaming_providers": []
+  },
+  "53466": {
+    "tmdb_id": 14043,
+    "poster": "https://image.tmdb.org/t/p/w500/a1aAZolyLFRwKhs0IWhFyTa8Z2Z.jpg",
+    "overview": "Intrepid teenage private eye Nancy Drew heads to Tinseltown with her father to investigate the unsolved murder of a movie star in this old-fashioned whodunit based on Carolyn Keene's popular series of books for young adults. But can the small-town girl cut through the Hollywood hype to solve the case?",
+    "tmdb_rating": 6.1,
+    "release_date": "2007-06-15",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/14043",
+    "streaming_providers": []
+  },
+  "7802": {
+    "tmdb_id": 11474,
+    "poster": "https://image.tmdb.org/t/p/w500/d6YZpBq4BhQr1K985J3CuL1cA8J.jpg",
+    "overview": "Prominent gang leader Cyrus calls a meeting of New York's gangs to set aside their turf wars and take over the city. At the meeting, a rival leader kills Cyrus, but a Coney Island gang called the Warriors is wrongly blamed for Cyrus' death. Before you know it, the cops and every gangbanger in town is hot on the Warriors' trail.",
+    "tmdb_rating": 7.7,
+    "release_date": "1979-02-01",
+    "runtime": 94,
+    "tmdb_url": "https://www.themoviedb.org/movie/11474",
+    "streaming_providers": []
+  },
+  "1473": {
+    "tmdb_id": 19952,
+    "poster": "https://image.tmdb.org/t/p/w500/dDutboDhQeIGZ0VOMI8RkM7MWm3.jpg",
+    "overview": "Four tuxedo clad men show up at a penitentiary to meet a friend who has just been released after three years in prison and is going straight from the jail to marry his girlfriend. En route to the wedding, one of the men asks to stop by a bank to pick up some cash. As it turns out, he is a wanted bank robber who uses Shakespeare passages during his robberies and thus has become known as \"Hamlet\". Soon all five men are caught up in the bank and involved in the robbery as they end up in a hostage situation. The hostage negotiator shows up who turns out to be Hamlet's father.",
+    "tmdb_rating": 5.3,
+    "release_date": "1997-10-17",
+    "runtime": 90,
+    "tmdb_url": "https://www.themoviedb.org/movie/19952",
+    "streaming_providers": []
+  },
+  "70728": {
+    "tmdb_id": 18533,
+    "poster": "https://image.tmdb.org/t/p/w500/6diyyGIbBNiANsdIaCGtyv4IofR.jpg",
+    "overview": "A young man who was sentenced to 7 years in prison for robbing a post office ends up spending 30 years in solitary confinement. During this time, his own personality is supplanted by his alter ego, Charles Bronson.",
+    "tmdb_rating": 6.9,
+    "release_date": "2009-03-13",
+    "runtime": 92,
+    "tmdb_url": "https://www.themoviedb.org/movie/18533",
+    "streaming_providers": []
+  },
+  "5049": {
+    "tmdb_id": 150,
+    "poster": "https://image.tmdb.org/t/p/w500/rvvjXHzEDBIvIVDBHNOwHS7hVPu.jpg",
+    "overview": "A hard-nosed cop reluctantly teams up with a wise-cracking criminal temporarily paroled to him, in order to track down a killer.",
+    "tmdb_rating": 6.7,
+    "release_date": "1982-12-07",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/150",
+    "streaming_providers": []
+  },
+  "41863": {
+    "tmdb_id": 8053,
+    "poster": "https://image.tmdb.org/t/p/w500/uHOEb6mo45qMSJaZqbkVa7oW1Y7.jpg",
+    "overview": "When brash Texas border officer Mike Norton wrongfully kills and buries the friend and ranch hand of Pete Perkins, the latter is reminded of a promise he made to bury his friend, Melquiades Estrada, in his Mexican home town. He kidnaps Norton and exhumes Estrada's corpse, and the odd caravan sets out on horseback for Mexico.",
+    "tmdb_rating": 7.0,
+    "release_date": "2005-11-17",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/8053",
+    "streaming_providers": []
+  },
+  "110297": {
+    "tmdb_id": 145220,
+    "poster": "https://image.tmdb.org/t/p/w500/AmX19leUR5gzBZrvA2QXVxGpgHK.jpg",
+    "overview": "After the success of their telethon and renewed fame, the Muppets go on a world tour and find themselves wrapped into an European jewel-heist caper headed by a Kermit the Frog look-alike and his dastardly sidekick.",
+    "tmdb_rating": 6.3,
+    "release_date": "2014-03-20",
+    "runtime": 107,
+    "tmdb_url": "https://www.themoviedb.org/movie/145220",
+    "streaming_providers": []
+  },
+  "136020": {
+    "tmdb_id": 206647,
+    "poster": "https://image.tmdb.org/t/p/w500/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
+    "overview": "A cryptic message from Bond\u2019s past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
+    "tmdb_rating": 6.6,
+    "release_date": "2015-10-26",
+    "runtime": 148,
+    "tmdb_url": "https://www.themoviedb.org/movie/206647",
+    "streaming_providers": []
+  },
+  "90945": {
+    "tmdb_id": 315169,
+    "poster": "https://image.tmdb.org/t/p/w500/h2zjMpvNVnokuZQFMNiUuT4BJUc.jpg",
+    "overview": "The final feature in the Eille Norwood Holmes series.",
+    "tmdb_rating": 6.2,
+    "release_date": "1923-06-01",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/315169",
+    "streaming_providers": []
+  },
+  "32296": {
+    "tmdb_id": 10040,
+    "poster": "https://image.tmdb.org/t/p/w500/gcYoIHND3ugn2VH1cNHHNQasEyI.jpg",
+    "overview": "After her triumph at the Miss United States pageant, FBI agent Gracie Hart becomes an overnight sensation -- and the new \"face of the FBI\". But it's time to spring into action again when the pageant's winner, Cheryl, and emcee, Stan, are abducted.",
+    "tmdb_rating": 5.7,
+    "release_date": "2005-03-11",
+    "runtime": 115,
+    "tmdb_url": "https://www.themoviedb.org/movie/10040",
+    "streaming_providers": [
+      {
+        "name": "Netflix",
+        "logo": "https://image.tmdb.org/t/p/w92/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+        "name": "JioHotstar",
+        "logo": "https://image.tmdb.org/t/p/w92/ledoS6EgdjTNq8F1e6wubUQer18.png"
+      }
+    ]
+  },
+  "4635": {
+    "tmdb_id": 20006,
+    "poster": "https://image.tmdb.org/t/p/w500/akIQcT3IErdrvK3r7JIktucXQsy.jpg",
+    "overview": "A skip tracer helps out a bail-jumper after her child is kidnapped by a group of ethno-nationalist thugs, of which her husband is a member, going by the name of Birthright. The baby is taken as leverage because, although initially oblivious, she has their money!",
+    "tmdb_rating": 5.5,
+    "release_date": "1989-05-26",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/20006",
+    "streaming_providers": []
+  },
+  "2000": {
+    "tmdb_id": 941,
+    "poster": "https://image.tmdb.org/t/p/w500/6gt44oqb4nE8vflPElffeGwsHVl.jpg",
+    "overview": "A veteran cop and an unstable detective become partners who must put their differences aside in order to bring down a heroin-smuggling ring run by ex-Special Forces.",
+    "tmdb_rating": 7.3,
+    "release_date": "1987-03-06",
+    "runtime": 110,
+    "tmdb_url": "https://www.themoviedb.org/movie/941",
+    "streaming_providers": []
+  },
+  "97950": {
+    "tmdb_id": 97430,
+    "poster": "https://image.tmdb.org/t/p/w500/nHgkRj6Igx3QsHmTyF4oAfBjAE7.jpg",
+    "overview": "In feudal China, a blacksmith who makes weapons for a small village is put in the position where he must defend himself and his fellow villagers.",
+    "tmdb_rating": 5.5,
+    "release_date": "2012-11-02",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/97430",
+    "streaming_providers": []
+  },
+  "8370": {
+    "tmdb_id": 479186,
+    "poster": "https://image.tmdb.org/t/p/w500/4oVKDgH6JvTueRMbw9V1DjNoIL6.jpg",
+    "overview": "Zatoichi goes to Taiwan to fight the Chinese.",
+    "tmdb_rating": 6.0,
+    "release_date": "1972-12-12",
+    "runtime": 0,
+    "tmdb_url": "https://www.themoviedb.org/movie/479186",
+    "streaming_providers": []
+  },
+  "150401": {
+    "tmdb_id": 325173,
+    "poster": "https://image.tmdb.org/t/p/w500/pzE3dfnmiNqjqLygS4HbMADFKa8.jpg",
+    "overview": "A rogue soldier turned outlaw is thrust into a relentless fight with a corrupt sheriff, his obedient deputies, and a dangerous drug cartel in order to protect his sister and her young daughter.",
+    "tmdb_rating": 6.5,
+    "release_date": "2015-11-19",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/325173",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "2616": {
+    "tmdb_id": 8592,
+    "poster": "https://image.tmdb.org/t/p/w500/sjeP4bpgsUvAGE8oFcICy2GaHxw.jpg",
+    "overview": "The comic strip detective finds his life vastly complicated when Breathless Mahoney makes advances towards him while he is trying to battle Big Boy Caprice's united mob.",
+    "tmdb_rating": 6.2,
+    "release_date": "1990-06-15",
+    "runtime": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/8592",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "7899": {
+    "tmdb_id": 49636,
+    "poster": "https://image.tmdb.org/t/p/w500/upa8qI25kJrrQHgYz66IO2ccvoH.jpg",
+    "overview": "A one-armed martial arts master is being stalked by an Imperial assassin, the master of two fighters  killed in the previous film. When the One-Armed Boxer is invited to attend a martial arts tournament, his efforts to lay low are unsuccessful, and the assassin soon tracks him down with the help of his three subordinates: a Thai boxer, a yoga master, and a kobojutsu user.",
+    "tmdb_rating": 6.7,
+    "release_date": "1976-04-24",
+    "runtime": 93,
+    "tmdb_url": "https://www.themoviedb.org/movie/49636",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "86142": {
+    "tmdb_id": 58857,
+    "poster": "https://image.tmdb.org/t/p/w500/yUsVsiVXUwClk4vSCx80vrdO6MV.jpg",
+    "overview": "A bravado period action film set at the end of Japan's feudal era in which a group of unemployed samurai are enlisted to bring down a sadistic lord and prevent him from ascending to the throne and plunging the country into a war-torn future.",
+    "tmdb_rating": 7.3,
+    "release_date": "2010-09-25",
+    "runtime": 141,
+    "tmdb_url": "https://www.themoviedb.org/movie/58857",
+    "streaming_providers": [
+      {
+        "name": "Brew",
+        "logo": "https://image.tmdb.org/t/p/w92/mwGw3KrIZxnACdeojp2a5cO41hi.png"
+      }
+    ],
+    "watchmode_sources": []
+  },
+  "4387": {
+    "tmdb_id": 2140,
+    "poster": "https://image.tmdb.org/t/p/w500/1ubtSyagwfNF9Bn9s2CKITRtx1d.jpg",
+    "overview": "Liu Jian, an elite Chinese police officer, comes to Paris to arrest a Chinese drug lord. When Jian is betrayed by a French officer and framed for murder, he must go into hiding and find new allies.",
+    "tmdb_rating": 6.9,
+    "release_date": "2001-07-06",
+    "runtime": 98,
+    "tmdb_url": "https://www.themoviedb.org/movie/2140",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "135803": {
+    "tmdb_id": 41378,
+    "poster": "https://image.tmdb.org/t/p/w500/WnfqFz8qQ35RMpOrv5X8FJxPwB.jpg",
+    "overview": "A young martial artist vows to take revenge against the ninja who murdered his martial arts master and brothers. He finds a new teacher and faces, together with his new brothers, the Five Element Ninja challenge.",
+    "tmdb_rating": 6.8,
+    "release_date": "1982-04-21",
+    "runtime": 108,
+    "tmdb_url": "https://www.themoviedb.org/movie/41378",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "58627": {
+    "tmdb_id": 8456,
+    "poster": "https://image.tmdb.org/t/p/w500/8oRUTyP1QAtGDMvRpKZyuyFPG0U.jpg",
+    "overview": "Jake, full of anger after his father's death, is just starting to find a place for himself at his new Orlando high school - until Ryan, head of an underground MMA fight club, picks Jake out as a prime opponent. After being trounced by Ryan in front of the entire school, Jake begins training under the firm, moral guidance of a MMA master, where he learns how to fight... and how to avoid a fight. But it becomes obvious that a rematch will be inevitable if Jake wants to stop Ryan and his bullying, once and for all.",
+    "tmdb_rating": 6.8,
+    "release_date": "2008-03-04",
+    "runtime": 113,
+    "tmdb_url": "https://www.themoviedb.org/movie/8456",
+    "streaming_providers": [
+      {
+        "name": "Lionsgate+ Amazon Channels",
+        "logo": "https://image.tmdb.org/t/p/w92/1356slxu4QrHOMrEVDKHJXRo5sW.png"
+      }
+    ],
+    "watchmode_sources": []
+  },
+  "2624": {
+    "tmdb_id": 17962,
+    "poster": "https://image.tmdb.org/t/p/w500/bs2M1hqAQl5LeAOPPRV4drwouZS.jpg",
+    "overview": "On a cold Monday morning, a group of counselors clock in at an old-fashioned social services office. Their task is to interview the recently deceased, record their personal details, then, over the course of the week, assist them in choosing a single memory to keep for eternity.",
+    "tmdb_rating": 7.2,
+    "release_date": "1999-04-17",
+    "runtime": 118,
+    "tmdb_url": "https://www.themoviedb.org/movie/17962",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "1251": {
+    "tmdb_id": 422,
+    "poster": "https://image.tmdb.org/t/p/w500/23VIf7zNxAgaXwIlvzd3IvOd9sY.jpg",
+    "overview": "Guido Anselmi, a film director, finds himself creatively barren at the peak of his career. Urged by his doctors to rest, Anselmi heads for a luxurious resort, but a sorry group gathers\u2014his producer, staff, actors, wife, mistress, and relatives\u2014each one begging him to get on with the show. In retreat from their dependency, he fantasizes about past women and dreams of his childhood.",
+    "tmdb_rating": 8.1,
+    "release_date": "1963-02-14",
+    "runtime": 139,
+    "tmdb_url": "https://www.themoviedb.org/movie/422",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "69951": {
+    "tmdb_id": 8054,
+    "poster": "https://image.tmdb.org/t/p/w500/DtrqQHa0wT9AWrk2WA9beROJJx.jpg",
+    "overview": "After a carnival troupe saves his life, a man agrees to help its immortal leader collect five souls and win a bet with the devil.",
+    "tmdb_rating": 6.4,
+    "release_date": "2009-10-01",
+    "runtime": 123,
+    "tmdb_url": "https://www.themoviedb.org/movie/8054",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "111732": {
+    "tmdb_id": 137698,
+    "poster": "https://image.tmdb.org/t/p/w500/2qbsG9t943DciYTHITISzXQltqt.jpg",
+    "overview": "'Having broken away from my illusory self, I was desperately seeking a path and a meaning to life.' This phrase perfectly sums up Alejandro Jodorowsky\u2019s biographical project: reconstituting the incredible adventure of his life. He was born in 1929 Tocopilla, a coastal town on edge of the Chilean desert, where he discovered the fundamentals of reality, as he underwent an unhappy and alienated childhood as part of an uprooted family.",
+    "tmdb_rating": 7.2,
+    "release_date": "2013-06-19",
+    "runtime": 130,
+    "tmdb_url": "https://www.themoviedb.org/movie/137698",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "164280": {
+    "tmdb_id": 325385,
+    "poster": "https://image.tmdb.org/t/p/w500/iJTWnSa3YOnD15zMME3ox9GP8XA.jpg",
+    "overview": "A portrait of the director\u2019s young adulthood, set in the 1940s\u20131950s, in the electric capital city of Santiago. There, he decides to become a poet and is introduced, by destiny, into the foremost bohemian and artistic circle of the time.",
+    "tmdb_rating": 7.4,
+    "release_date": "2016-03-23",
+    "runtime": 128,
+    "tmdb_url": "https://www.themoviedb.org/movie/325385",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "4282": {
+    "tmdb_id": 11163,
+    "poster": "https://image.tmdb.org/t/p/w500/83urUMl04GtwuuGIFpezqzi7n6m.jpg",
+    "overview": "After his young lover, Gitone, leaves him for another man, Encolpio decides to kill himself, but a sudden earthquake destroys his home before he has a chance to do so. Now wandering around Rome in the time of Nero, Encolpio encounters one bizarre and surreal scene after another.",
+    "tmdb_rating": 6.7,
+    "release_date": "1969-09-18",
+    "runtime": 129,
+    "tmdb_url": "https://www.themoviedb.org/movie/11163",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "69251": {
+    "tmdb_id": 13856,
+    "poster": "https://image.tmdb.org/t/p/w500/5oGxZ9Itu8buWnB15p6sri3zh9n.jpg",
+    "overview": "A lonely metermaid has a psychotic reaction to his medication and becomes convinced he's a superhero. A very select group of people in life are truly gifted. Special is a movie about everyone else.",
+    "tmdb_rating": 6.3,
+    "release_date": "2006-11-17",
+    "runtime": 81,
+    "tmdb_url": "https://www.themoviedb.org/movie/13856",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "7064": {
+    "tmdb_id": 648,
+    "poster": "https://image.tmdb.org/t/p/w500/iYSe3yrkma0e1B0wWPXgr8w5sDN.jpg",
+    "overview": "The story of a gentle-hearted beast in love with a simple and beautiful girl. She is drawn to the repellent but strangely fascinating Beast, who tests her fidelity by giving her a key, telling her that if she doesn't return it to him by a specific time, he will die of grief. She is unable to return the key on time, but it is revealed that the Beast is the genuinely handsome one. A simple tale of tragic love that turns into a surreal vision of death, desire, and beauty.",
+    "tmdb_rating": 7.5,
+    "release_date": "1946-10-29",
+    "runtime": 96,
+    "tmdb_url": "https://www.themoviedb.org/movie/648",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "8492": {
+    "tmdb_id": 13188,
+    "poster": "https://image.tmdb.org/t/p/w500/sxLRt2u5xgUgkrIAPyE0KiiSVnX.jpg",
+    "overview": "Ebenezer Scrooge malcontentedly shuffles through life as a cruel, miserly businessman, until he is visited by three spirits on Christmas Eve who show him how his unhappy childhood and adult behavior has left him a selfish, lonely old man.",
+    "tmdb_rating": 7.4,
+    "release_date": "1951-11-30",
+    "runtime": 86,
+    "tmdb_url": "https://www.themoviedb.org/movie/13188",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "5667": {
+    "tmdb_id": 13768,
+    "poster": "https://image.tmdb.org/t/p/w500/9BXAC4uTHuD37hpiGOmhetqNgnO.jpg",
+    "overview": "Teenager Winnie Foster is growing up in a small rural town in 1914 with her loving but overprotective parents, but Winnie longs for a life of greater freedom and adventure.",
+    "tmdb_rating": 6.7,
+    "release_date": "2002-10-11",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/13768",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "95839": {
+    "tmdb_id": 17979,
+    "poster": "https://image.tmdb.org/t/p/w500/xNwlAIdx1Ln28GRiQttUP9Gojy2.jpg",
+    "overview": "Miser Ebenezer Scrooge is awakened on Christmas Eve by spirits who reveal to him his own miserable existence, what opportunities he wasted in his youth, his current cruelties, and the dire fate that awaits him if he does not change his ways. Scrooge is faced with his own story of growing bitterness and meanness, and must decide what his own future will hold: death or redemption.",
+    "tmdb_rating": 6.9,
+    "release_date": "2009-11-04",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/17979",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "201": {
+    "tmdb_id": 540462,
+    "poster": "https://image.tmdb.org/t/p/w500/d9q7KfavMS389B73yPHRmIb2vgP.jpg",
+    "overview": "Three Wishes is a Hong Kong Comedy starring Anita Mui",
+    "tmdb_rating": 7.0,
+    "release_date": "1988-08-11",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/540462",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "6547": {
+    "tmdb_id": 32235,
+    "poster": "https://image.tmdb.org/t/p/w500/jb3qheP75UgVibpnfubotrBDY5v.jpg",
+    "overview": "The year is 1955, and a great flood is coming to Northfork, Montana. A new hydroelectric dam is about to be installed in the mountains above the town, ready to submerge the valley in the name of progress. It is the responsibility of a six-man Evacuation Committee to relocate the townsfolk to higher ground. Most have duly departed, but a few stubborn stragglers remain \u2013 among them a priest caring for a sickly orphan, a boy whose fevered visions are leading him to believe he is a member of a roaming band of lost angels desperately searching for a way home.",
+    "tmdb_rating": 6.0,
+    "release_date": "2003-07-11",
+    "runtime": 103,
+    "tmdb_url": "https://www.themoviedb.org/movie/32235",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "162600": {
+    "tmdb_id": 283366,
+    "poster": "https://image.tmdb.org/t/p/w500/CIlbMFOfYDj0MP23hsIYhFGrL6.jpg",
+    "overview": "A teenager finds himself transported to an island where he must help protect a group of orphans with special powers from creatures intent on destroying them.",
+    "tmdb_rating": 6.8,
+    "release_date": "2016-09-28",
+    "runtime": 127,
+    "tmdb_url": "https://www.themoviedb.org/movie/283366",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "131610": {
+    "tmdb_id": 46836,
+    "poster": "https://image.tmdb.org/t/p/w500/p0nGwLpUYRDIuKck4XXbIn8YTk7.jpg",
+    "overview": "Milly is annoyed whenever her mom tells her to behave more appropriate for a girl. She's just not interested in fancy dresses or prom dances. Some day her best friend's little brother offers her a potion which can make her deepest wish come true during a solar eclipse. She goes through with it and ends up with male genitals, additionally. So she has to decide if she wants to live as a boy or a girl. Her father, who always wanted a son, supports her in checking out life as a boy. Hence Milly changes school and starts out as Willy.",
+    "tmdb_rating": 5.4,
+    "release_date": "1986-11-14",
+    "runtime": 86,
+    "tmdb_url": "https://www.themoviedb.org/movie/46836",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "6270": {
+    "tmdb_id": 12516,
+    "poster": "https://image.tmdb.org/t/p/w500/ua17wrOrUjyqxuYmnUrmOVBMf4G.jpg",
+    "overview": "Eight visually rich vignettes drawn from Kurosawa\u2019s own dreams\u2014fox weddings and vanished orchards, a soldier\u2019s ghosts, a walk through Van Gogh\u2019s canvases, nuclear nightmares, and a water-mill utopia\u2014meditate on childhood, art, mortality, and humanity\u2019s uneasy bond with nature.",
+    "tmdb_rating": 7.8,
+    "release_date": "1990-05-11",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/12516",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "1199": {
+    "tmdb_id": 68,
+    "poster": "https://image.tmdb.org/t/p/w500/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+    "overview": "Low-level bureaucrat Sam Lowry escapes the monotony of his day-to-day life through a recurring daydream of himself as a virtuous hero saving a beautiful damsel. Investigating a case that led to the wrongful arrest and eventual death of an innocent man instead of wanted terrorist Harry Tuttle, he meets the woman from his daydream, and in trying to help her gets caught in a web of mistaken identities, mindless bureaucracy and lies.",
+    "tmdb_rating": 7.7,
+    "release_date": "1985-02-20",
+    "runtime": 143,
+    "tmdb_url": "https://www.themoviedb.org/movie/68",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "101962": {
+    "tmdb_id": 110420,
+    "poster": "https://image.tmdb.org/t/p/w500/vHMvBkr42Gh3OORcnmfCFfqJ1E.jpg",
+    "overview": "After her werewolf lover unexpectedly dies in an accident, a woman must find a way to raise the son and daughter that she had with him. However, their inheritance of their father's traits prove to be a challenge for her.",
+    "tmdb_rating": 8.2,
+    "release_date": "2012-07-21",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/110420",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "1278": {
+    "tmdb_id": 3034,
+    "poster": "https://image.tmdb.org/t/p/w500/3BvvVKPg9yucChlSvQtJxAbLmj9.jpg",
+    "overview": "A young neurosurgeon inherits the castle of his grandfather, the famous Dr. Victor von Frankenstein. In the castle he finds a funny hunchback, a pretty lab assistant and the elderly housekeeper. Young Frankenstein believes that the work of his grandfather was delusional, but when he discovers the book where the mad doctor described his reanimation experiment, he suddenly changes his mind.",
+    "tmdb_rating": 7.9,
+    "release_date": "1974-12-15",
+    "runtime": 106,
+    "tmdb_url": "https://www.themoviedb.org/movie/3034",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "26258": {
+    "tmdb_id": 13041,
+    "poster": "https://image.tmdb.org/t/p/w500/fKoNBTATc94rUYLq8VyypS24LUw.jpg",
+    "overview": "El Topo decides to confront warrior Masters on a trans-formative desert journey he begins with his 6 year old son, who must bury his childhood totems to become a man.",
+    "tmdb_rating": 7.1,
+    "release_date": "1970-12-18",
+    "runtime": 125,
+    "tmdb_url": "https://www.themoviedb.org/movie/13041",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "5417": {
+    "tmdb_id": 13245,
+    "poster": "https://image.tmdb.org/t/p/w500/jSGiFOTwosoiAAXLTLHtzMUCVUN.jpg",
+    "overview": "Based on a local legend and set in an unknown era, it deals with universal themes of love, possessiveness, family, jealousy and power. Beautifully shot, and acted by Inuit people, it portrays a time when people fought duels by taking turns to punch each other until one was unconscious, made love on the way to the caribou hunt, ate walrus meat and lit their igloos with seal-oil lamps.",
+    "tmdb_rating": 6.8,
+    "release_date": "2002-02-01",
+    "runtime": 172,
+    "tmdb_url": "https://www.themoviedb.org/movie/13245",
+    "streaming_providers": [],
+    "watchmode_sources": []
+  },
+  "3088": {
+    "tmdb_id": 326115,
+    "poster": "https://image.tmdb.org/t/p/w500/2OPZ5cKaaahpjzg2kztcciaOcsw.jpg",
+    "overview": "Elwood P. Dowd's constant companion is Harvey, a six-foot tall invisible rabbit. To his sister, his obsession with Harvey has been a thorn in her plans to marry off her daughter. However, when she decides to put Elwood in a mental institution, a mix-up occurs, and she finds herself committed instead. It's now up to Elwood and \"Harvey\" to straighten out the mess.",
+    "tmdb_rating": 6.6,
+    "release_date": "1972-03-22",
+    "runtime": null,
+    "tmdb_url": "https://www.themoviedb.org/movie/326115",
+    "streaming_providers": [],
+    "watchmode_sources": []
   }
 }

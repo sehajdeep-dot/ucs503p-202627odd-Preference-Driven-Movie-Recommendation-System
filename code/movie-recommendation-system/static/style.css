@@ -922,7 +922,7 @@ h3 {
 .group-genre-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns:1fr;
     gap: 10px;
     align-items: stretch;
 }
@@ -1654,4 +1654,1281 @@ a:focus-visible {
         transition: none !important;
         animation: none !important;
     }
+}
+/* =========================================================
+   FILTER CONTROLS
+   ========================================================= */
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 12px 0 18px 0;
+}
+
+.filter-controls label {
+    color: #d4a25f;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.rating-filter {
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: linear-gradient(
+        145deg,
+        rgba(35, 18, 35, 0.96),
+        rgba(18, 9, 18, 0.98)
+    );
+
+    color: #d4a25f;
+
+    border: 1px solid #806238;
+    border-radius: 8px;
+
+    padding: 7px 30px 7px 12px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    outline: none;
+    cursor: pointer;
+
+    box-shadow:
+        inset 0 1px 0 rgba(212, 162, 95, 0.12),
+        0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.rating-filter:hover {
+    border-color: #d4a25f;
+
+    box-shadow:
+        inset 0 1px 0 rgba(212, 162, 95, 0.18),
+        0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+.rating-filter:focus {
+    border-color: #d4a25f;
+
+    box-shadow:
+        0 0 0 2px rgba(212, 162, 95, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.rating-filter option {
+    background: #180d18;
+    color: #d4a25f;
+}
+/* =========================================================
+   LOGIN / SIGNUP
+========================================================= */
+
+.auth-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: rgba(5, 5, 8, 0.78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-modal.active {
+    display: flex;
+}
+
+.auth-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background: linear-gradient(
+        160deg,
+        var(--bg-surface-raised),
+        var(--bg-surface)
+    );
+    border: 1px solid var(--gold-dim);
+    border-radius: 18px;
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.65),
+        0 0 35px rgba(212, 162, 95, 0.08);
+}
+
+.auth-modal-content h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--gold-bright);
+}
+
+.auth-modal-content h2 i {
+    margin-right: 8px;
+}
+
+.auth-modal-content > div > p {
+    text-align: center;
+    color: var(--ink-dim);
+    line-height: 1.5;
+}
+
+.auth-modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.auth-modal-content input {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border-radius: 9px;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-void);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 14px;
+    outline: none;
+}
+
+.auth-modal-content input::placeholder {
+    color: var(--ink-faint);
+}
+
+.auth-modal-content input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px rgba(212, 162, 95, 0.10);
+}
+
+.auth-modal-content .primary-button {
+    width: 100%;
+    margin: 5px 0 0;
+}
+
+.auth-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-surface);
+    color: var(--ink);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.auth-close:hover {
+    background: var(--gold);
+    color: #201a0d;
+    border-color: var(--gold);
+}
+
+.auth-switch {
+    margin-top: 22px;
+    font-size: 13px;
+}
+
+.auth-switch button {
+    border: none;
+    background: none;
+    color: var(--gold-bright);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-switch button:hover {
+    color: var(--gold);
+}
+
+#login-message,
+#signup-message {
+    min-height: 20px;
+    margin-top: 12px;
+    color: var(--crimson-bright);
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   USER ACCOUNT BAR
+========================================================= */
+
+#user-account-bar {
+    position: fixed;
+    top: 18px;
+    right: 25px;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 14px;
+    background: var(--bg-surface-raised);
+    border: 1px solid var(--gold-dim);
+    border-radius: 999px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+#logged-user-name {
+    color: var(--gold-bright);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#user-account-bar button {
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    padding: 7px 12px;
+    background: transparent;
+    color: var(--ink-dim);
+    cursor: pointer;
+}
+
+#user-account-bar button:hover {
+    color: var(--gold-bright);
+    border-color: var(--gold-dim);
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+#login-button {
+    position: fixed;
+    top: 18px;
+    right: 25px;
+    z-index: 9998;
+    margin: 0;
+}
+
+
+/* =========================================================
+   LIKE / DISLIKE
+========================================================= */
+
+.feedback-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.like-button,
+.dislike-button {
+    padding: 8px 15px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-surface);
+    color: var(--ink-dim);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.like-button:hover {
+    color: var(--gold-bright);
+    border-color: var(--gold);
+    background: rgba(212, 162, 95, 0.10);
+    transform: translateY(-1px);
+}
+
+.dislike-button:hover {
+    color: var(--crimson-bright);
+    border-color: var(--crimson);
+    background: rgba(184, 50, 74, 0.10);
+    transform: translateY(-1px);
+}
+
+.like-button.active {
+    background: linear-gradient(120deg, var(--gold), var(--gold-bright));
+    color: #201a0d;
+    border-color: var(--gold-bright);
+}
+
+.dislike-button.active {
+    background: var(--crimson);
+    color: white;
+    border-color: var(--crimson-bright);
+}
+
+
+/* =========================================================
+   MOBILE AUTH
+========================================================= */
+
+@media (max-width: 700px) {
+
+    #login-button {
+        top: 12px;
+        right: 12px;
+    }
+
+    #user-account-bar {
+        top: 12px;
+        right: 12px;
+        max-width: calc(100% - 24px);
+    }
+
+    .auth-modal-content {
+        padding: 30px 22px;
+    }
+
+}
+/* =========================================================
+   AUTH LANDING PAGE
+   ========================================================= */
+
+.auth-landing {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    position: fixed;
+    inset: 0;
+    z-index: 20000;
+
+    background:
+        radial-gradient(
+            ellipse 700px 500px at 20% 20%,
+            rgba(184, 50, 74, 0.22),
+            transparent 65%
+        ),
+        radial-gradient(
+            ellipse 600px 450px at 80% 75%,
+            rgba(212, 162, 95, 0.14),
+            transparent 65%
+        ),
+        var(--bg-void);
+}
+
+
+/* Main card */
+
+.auth-landing-card {
+    width: 100%;
+    max-width: 470px;
+    padding: 45px 42px;
+
+    background:
+        linear-gradient(
+            160deg,
+            rgba(32, 22, 34, 0.98),
+            rgba(24, 16, 26, 0.98)
+        );
+
+    border: 1px solid var(--gold-dim);
+    border-radius: 22px;
+
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.70),
+        0 0 45px rgba(212, 162, 95, 0.08);
+
+    position: relative;
+    overflow: hidden;
+
+    animation: cardRise 0.55s ease;
+}
+
+
+/* Golden cinema line */
+
+.auth-landing-card::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 3px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold),
+            var(--gold-bright),
+            var(--crimson),
+            transparent
+        );
+}
+
+
+/* Brand */
+
+.auth-landing-brand {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.auth-logo {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(240, 201, 136, 0.28),
+            rgba(212, 162, 95, 0.06)
+        );
+
+    border: 1px solid var(--gold);
+
+    font-size: 34px;
+
+    box-shadow:
+        0 0 30px rgba(212, 162, 95, 0.12);
+}
+
+
+.auth-landing-brand h1 {
+    margin: 0;
+
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.15;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--gold-bright),
+            var(--gold) 55%,
+            var(--crimson-bright)
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.auth-landing-brand p {
+    margin: 14px 0 0;
+
+    color: var(--ink-dim);
+
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* Login / Signup headings */
+
+.auth-landing-card #login-form h2,
+.auth-landing-card #signup-form h2 {
+    text-align: center;
+
+    margin: 0 0 9px;
+
+    color: var(--ink);
+
+    font-family: var(--font-display);
+    font-size: 25px;
+}
+
+
+.auth-landing-card #login-form h2 i,
+.auth-landing-card #signup-form h2 i {
+    color: var(--gold-bright);
+    margin-right: 7px;
+}
+
+
+.auth-description {
+    text-align: center;
+
+    color: var(--ink-dim);
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* Forms */
+
+.auth-landing-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    margin-top: 24px;
+}
+
+
+.auth-landing-card input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--border-strong);
+
+    background: var(--bg-void);
+
+    color: var(--ink);
+
+    font-family: var(--font-body);
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.auth-landing-card input::placeholder {
+    color: var(--ink-faint);
+}
+
+
+.auth-landing-card input:focus {
+    border-color: var(--gold);
+
+    box-shadow:
+        0 0 0 3px rgba(212, 162, 95, 0.10);
+}
+
+
+/* Submit button */
+
+.auth-submit-button {
+    width: 100%;
+
+    margin: 7px 0 0;
+
+    min-height: 48px;
+
+    font-size: 15px;
+}
+
+
+/* Login / signup switch */
+
+.auth-landing-card .auth-switch {
+    text-align: center;
+
+    margin: 22px 0 0;
+
+    color: var(--ink-dim);
+
+    font-size: 13px;
+}
+
+
+.auth-landing-card .auth-switch button {
+    border: none;
+    background: none;
+
+    color: var(--gold-bright);
+
+    font-family: var(--font-body);
+    font-weight: 700;
+
+    cursor: pointer;
+
+    padding: 0;
+    margin-left: 3px;
+
+    transition: color 0.2s ease;
+}
+
+
+.auth-landing-card .auth-switch button:hover {
+    color: var(--gold);
+}
+
+
+/* Messages */
+
+#login-message,
+#signup-message {
+    min-height: 20px;
+
+    text-align: center;
+
+    margin: 12px 0 0;
+
+    color: var(--crimson-bright);
+
+    font-size: 13px;
+}
+
+
+/* Hide old modal completely */
+
+#auth-modal {
+    display: none !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .auth-landing {
+        padding: 20px 15px;
+    }
+
+    .auth-landing-card {
+        padding: 38px 25px;
+        border-radius: 18px;
+    }
+
+    .auth-landing-brand h1 {
+        font-size: 25px;
+    }
+
+    .auth-logo {
+        width: 62px;
+        height: 62px;
+        font-size: 29px;
+    }
+
+}
+
+
+/* Very small screens */
+
+@media (max-width: 380px) {
+
+    .auth-landing-card {
+        padding: 32px 20px;
+    }
+
+    .auth-landing-brand h1 {
+        font-size: 22px;
+    }
+
+}
+/* MOVIE FEEDBACK MODAL */
+.pending-watch-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.75) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 99999 !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+}
+
+.pending-watch-card {
+    position: relative !important;
+    width: min(520px, 90vw) !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+    background: #171024 !important;
+    border: 2px solid #d4af37 !important;
+    border-radius: 18px !important;
+    padding: 28px !important;
+    box-sizing: border-box !important;
+    color: white !important;
+    text-align: center !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6) !important;
+}
+
+.pending-watch-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+
+.pending-watch-poster {
+    width: 150px !important;
+    max-height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+}
+
+.pending-watch-info {
+    width: 100% !important;
+}
+
+.pending-watch-actions {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+}
+
+.pending-watch-close {
+    position: absolute !important;
+    top: 10px !important;
+    right: 14px !important;
+    background: transparent !important;
+    border: none !important;
+    color: #d4af37 !important;
+    font-size: 28px !important;
+    cursor: pointer !important;
+}
+/* FEEDBACK POPUP BUTTONS */
+
+.pending-watch-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+
+/* Like + Dislike */
+#movie-feedback-like,
+#movie-feedback-dislike {
+    width: 55px !important;
+    height: 55px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    border: 1px solid var(--gold-dim) !important;
+    background: var(--bg-surface) !important;
+    color: var(--gold-bright) !important;
+    font-size: 0 !important;
+    cursor: pointer !important;
+}
+
+/* Show only the emoji icon */
+#movie-feedback-like::before {
+    content: "👍";
+    font-size: 23px;
+}
+
+#movie-feedback-dislike::before {
+    content: "👎";
+    font-size: 23px;
+}
+
+/* Hover */
+#movie-feedback-like:hover,
+#movie-feedback-dislike:hover {
+    background: var(--bg-surface-hover) !important;
+    border-color: var(--gold) !important;
+    transform: translateY(-2px);
+}
+
+/* Watchlist BELOW */
+#movie-feedback-watchlist {
+    flex-basis: 100% !important;
+    width: fit-content !important;
+    margin-top: 4px !important;
+    padding: 11px 24px !important;
+    border-radius: 999px !important;
+    border: 1px solid var(--gold-dim) !important;
+    background: var(--bg-surface) !important;
+    color: var(--gold-bright) !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+}
+
+#movie-feedback-watchlist:hover {
+    background: var(--bg-surface-hover) !important;
+    border-color: var(--gold) !important;
+}
+
+/* Popup close X */
+.pending-watch-close {
+    width: 32px !important;
+    height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid var(--border-strong) !important;
+    border-radius: 50% !important;
+    background: var(--bg-surface) !important;
+    color: var(--gold-bright) !important;
+    font-size: 22px !important;
+}
+
+.pending-watch-close:hover {
+    background: var(--gold) !important;
+    color: #201a0d !important;
+}
+/* PROFILE AVATAR + MENU */
+
+.profile-menu-wrapper {
+    position: relative;
+}
+
+.profile-avatar-button {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--gold);
+    background: var(--bg-surface);
+    color: var(--gold-bright);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 230px;
+    background: #171024;
+    border: 1px solid var(--gold);
+    border-radius: 14px;
+    padding: 12px;
+    z-index: 9999;
+    box-shadow: 0 15px 40px rgba(0,0,0,.6);
+}
+
+.profile-menu.open {
+    display: block;
+}
+
+.profile-menu-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.profile-menu-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gold);
+    color: var(--gold-bright);
+}
+
+.profile-menu-user strong,
+.profile-menu-user small {
+    display: block;
+}
+
+.profile-menu-user strong {
+    color: white;
+}
+
+.profile-menu-user small {
+    color: #aaa;
+    margin-top: 3px;
+}
+
+.profile-menu-divider {
+    height: 1px;
+    background: var(--border-strong);
+    margin: 8px 0;
+}
+
+.profile-menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 10px;
+    border: none;
+    background: transparent;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.profile-menu-item:hover {
+    background: var(--bg-surface-hover);
+    color: var(--gold-bright);
+}
+
+.profile-menu-item i {
+    color: var(--gold-bright);
+}
+
+.logout-item {
+    color: #ff6b6b;
+}
+
+.logout-item i {
+    color: #ff6b6b;
+}
+/* USER MOVIE LIST POPUP */
+
+#user-movie-list-popup {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.78) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 100000 !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+}
+
+.user-movie-list-card {
+    position: relative !important;
+    width: min(700px, 92vw) !important;
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+    background: #171024 !important;
+    border: 2px solid #d4af37 !important;
+    border-radius: 18px !important;
+    padding: 30px !important;
+    color: white !important;
+    box-shadow: 0 20px 60px rgba(0,0,0,.7) !important;
+}
+
+.user-movie-list-card h2 {
+    color: #f0c978 !important;
+    margin: 0 0 22px !important;
+}
+
+.user-movie-list-close {
+    position: absolute !important;
+    top: 12px !important;
+    right: 14px !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    border: 1px solid #d4af37 !important;
+    background: #21162b !important;
+    color: #f0c978 !important;
+    font-size: 22px !important;
+    cursor: pointer !important;
+}
+
+.user-movie-list-items {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
+    gap: 18px !important;
+}
+
+.user-movie-item {
+    background: #21162b !important;
+    border: 1px solid #4b3855 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    color: white !important;
+}
+
+.user-movie-item img {
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+}
+
+.user-movie-item strong {
+    display: block !important;
+    color: #f0c978 !important;
+}
+
+.user-movie-item small {
+    display: block !important;
+    margin-top: 6px !important;
+    color: #b9adbf !important;
+}
+
+.user-movie-empty {
+    color: #b9adbf !important;
+    text-align: center !important;
+}
+/* ===== USER MOVIE LIST ===== */
+
+#user-movie-list-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.user-movie-list-card {
+    position: relative;
+    width: min(1000px, 92vw);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 32px;
+    background: #171024;
+    border: 2px solid #d4af37;
+    border-radius: 20px;
+    box-shadow: 0 20px 70px rgba(0,0,0,.7);
+    color: white;
+}
+
+.user-movie-list-card h2 {
+    margin: 0 0 25px;
+    color: #f1d06b;
+    font-family: var(--font-heading, Georgia, serif);
+    font-size: 30px;
+}
+
+.user-movie-list-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #d4af37;
+    background: #171024;
+    color: #f1d06b;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.user-movie-list-close:hover {
+    background: #d4af37;
+    color: #171024;
+}
+
+.user-movie-list-items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.user-movie-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 180px;
+    padding: 16px;
+    background: #21172d;
+    border: 1px solid #59466b;
+    border-radius: 15px;
+}
+
+.user-movie-item img,
+.user-movie-no-poster {
+    width: 105px;
+    height: 145px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.user-movie-no-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #100b18;
+    font-size: 30px;
+}
+
+.user-movie-item strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #f5e8c0;
+    font-size: 19px;
+}
+
+.user-movie-item small {
+    display: block;
+    margin-bottom: 18px;
+    color: #f1c94c;
+    font-size: 15px;
+}
+
+.user-movie-details-button {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d4af37, #f1cf63);
+    color: #21170a;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(212,175,55,.2);
+}
+
+.user-movie-details-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212,175,55,.35);
+}
+
+.user-movie-empty {
+    color: #aaa;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+    .user-movie-list-items {
+        grid-template-columns: 1fr;
+    }
+}
+/* SAVED MOVIES LIST */
+.user-movie-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+    padding: 16px !important;
+}
+
+.user-movie-item img,
+.user-movie-no-poster {
+    width: 100px !important;
+    height: 140px !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+}
+
+.user-movie-details-button {
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+}
+.user-movie-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+.user-movie-details-button {
+    margin-left: 20px !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+}
+/* FIX SAVED MOVIE CARDS */
+
+.user-movie-list-items {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+}
+
+.user-movie-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    min-height: 150px !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
+    background: #21172d !important;
+    border: 1px solid #59466b !important;
+    border-radius: 15px !important;
+}
+
+.user-movie-poster-box {
+    width: 100px !important;
+    height: 140px !important;
+    flex: 0 0 100px !important;
+    overflow: hidden !important;
+    border-radius: 9px !important;
+    background: #0f0a18 !important;
+}
+
+.user-movie-poster-box img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.user-movie-no-poster {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 28px !important;
+}
+
+.user-movie-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+}
+
+.user-movie-info strong {
+    color: #f0c75e !important;
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+}
+
+.user-movie-details-button {
+    position: static !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 10px 15px !important;
+    border-radius: 999px !important;
+    border: 1px solid #d4af37 !important;
+    background: #f0c75e !important;
+    color: #171024 !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+}
+
+.user-movie-details-button:hover {
+    transform: translateY(-2px) !important;
+}
+
+@media (max-width: 700px) {
+    .user-movie-list-items {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* STREAMING WATCH NOW BUTTONS — GOLD */
+.watch-provider-item {
+    margin-bottom: 14px !important;
+}
+
+.watch-now-button {
+    background: linear-gradient(120deg, var(--gold), var(--gold-bright)) !important;
+    color: #201a0d !important;
+    border: none !important;
+    border-radius: 999px !important;
+    padding: 9px 18px !important;
+    margin-top: 8px !important;
+    cursor: pointer !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: transform 0.15s ease, box-shadow 0.2s ease !important;
+}
+
+.watch-now-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 18px rgba(207, 161, 90, 0.28) !important;
 }

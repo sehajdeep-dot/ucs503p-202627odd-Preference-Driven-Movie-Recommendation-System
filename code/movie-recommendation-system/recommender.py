@@ -1,3 +1,4 @@
+
 import re
 import requests
 import pandas as pd
@@ -10,304 +11,594 @@ class MovieRecommender:
 
     def __init__(
         self,
-        movies_path: str,
-        ratings_path: str = "data/ratings.csv",
-        links_path: str = "data/links.csv",
-        tmdb_api_key: str = None
+        movies_path,
+        ratings_path,
+        links_path,
+        tmdb_api_key
     ):
+
         self.movies_path = movies_path
         self.ratings_path = ratings_path
         self.links_path = links_path
         self.tmdb_api_key = tmdb_api_key
 
         self.movies_df = None
-        self.genre_matrix = None
         self.mlb = None
+        self.genre_matrix = None
 
         self._load_data()
         self._load_ratings()
         self._load_links()
         self._build_genre_vectors()
 
-    # -----------------------------------------
-    # LOAD MOVIES
-    # -----------------------------------------
+
+    # ---------------------------------------------------------
+    # LOAD MOVIE DATA
+    # ---------------------------------------------------------
 
     def _load_data(self):
-        df = pd.read_csv(self.movies_path)
-        df = df.dropna(subset=["title", "genres"])
-        df = df[df["genres"] != "(no genres listed)"]
-        df["genres"] = df["genres"].str.strip()
-        df["genre_list"] = df["genres"].apply(lambda g: g.split("|"))
-        df = df.reset_index(drop=True)
-        self.movies_df = df
 
-    # -----------------------------------------
-    # LOAD RATINGS
-    # -----------------------------------------
-
-    def _load_ratings(self):
-        try:
-            ratings = pd.read_csv(self.ratings_path)
-            average_ratings = (
-                ratings.groupby("movieId")["rating"].mean().reset_index()
-            )
-            average_ratings.rename(columns={"rating": "avg_rating"}, inplace=True)
-
-            self.movies_df = self.movies_df.merge(
-                average_ratings, on="movieId", how="left"
-            )
-            self.movies_df["avg_rating"] = self.movies_df["avg_rating"].fillna(3.0)
-
-        except FileNotFoundError:
-            self.movies_df["avg_rating"] = 3.0
-
-    # -----------------------------------------
-    # LOAD LINKS (MovieLens -> TMDB Mapping)
-    # -----------------------------------------
-
-    def _load_links(self):
-        try:
-            links = pd.read_csv(self.links_path)
-            self.movies_df = self.movies_df.merge(
-                links[["movieId", "tmdbId"]], on="movieId", how="left"
-            )
-        except FileNotFoundError:
-            self.movies_df["tmdbId"] = None
-
-    # -----------------------------------------
-    # GENRE VECTORS
-    # -----------------------------------------
-
-    def _build_genre_vectors(self):
-        self.mlb = MultiLabelBinarizer()
-        self.genre_matrix = self.mlb.fit_transform(
-            self.movies_df["genre_list"]
+        self.movies_df = pd.read_csv(
+            self.movies_path
         )
 
-    # -----------------------------------------
-    # AVAILABLE GENRES
-    # -----------------------------------------
+        self.movies_df = self.movies_df.dropna(
+            subset=["title", "genres"]
+        ).copy()
+
+        # Remove movies where genres are not available
+        self.movies_df = self.movies_df[
+            self.movies_df["genres"] != "(no genres listed)"
+        ].copy()
+
+        # Convert pipe-separated genres into lists
+        self.movies_df["genre_list"] = (
+            self.movies_df["genres"].apply(
+                lambda x: x.split("|")
+            )
+        )
+
+
+    # ---------------------------------------------------------
+    # LOAD RATINGS
+    # ---------------------------------------------------------
+
+    def _load_ratings(self):
+
+        ratings_df = pd.read_csv(
+            self.ratings_path
+        )
+
+        avg_ratings = (
+            ratings_df
+            .groupby("movieId")["rating"]
+            .mean()
+            .reset_index()
+            .rename(
+                columns={
+                    "rating": "avg_rating"
+                }
+            )
+        )
+
+        self.movies_df = self.movies_df.merge(
+            avg_ratings,
+            on="movieId",
+            how="left"
+        )
+
+        # If a movie has no rating, use neutral/default rating
+        self.movies_df["avg_rating"] = (
+            self.movies_df["avg_rating"]
+            .fillna(3.0)
+        )
+
+
+    # ---------------------------------------------------------
+    # LOAD MOVIELENS -> TMDB LINKS
+    # ---------------------------------------------------------
+
+    def _load_links(self):
+
+        links_df = pd.read_csv(
+            self.links_path
+        )
+
+        # Keep only the columns required by the recommender
+        links_df = links_df[
+            ["movieId", "tmdbId"]
+        ].copy()
+
+        self.movies_df = self.movies_df.merge(
+            links_df,
+            on="movieId",
+            how="left"
+        )
+
+
+    # ---------------------------------------------------------
+    # BUILD GENRE VECTORS
+    # ---------------------------------------------------------
+
+    def _build_genre_vectors(self):
+
+        self.mlb = MultiLabelBinarizer()
+
+        self.genre_matrix = (
+            self.mlb.fit_transform(
+                self.movies_df["genre_list"]
+            )
+        )
+
+
+    # ---------------------------------------------------------
+    # GET AVAILABLE GENRES
+    # ---------------------------------------------------------
 
     def get_available_genres(self):
-        return list(self.mlb.classes_)
 
-    # -----------------------------------------
-    # USER VECTOR
-    # -----------------------------------------
+        return list(
+            self.mlb.classes_
+        )
 
-    def _build_user_vector(self, selected_genres):
-        return self.mlb.transform([selected_genres])
 
-    # -----------------------------------------
-    # DEPTH-WISE SIMILARITY
-    # How focused is the movie on the user's genres?
-    # = matched_genres / total_movie_genres
-    # High depth = movie is mostly about genres user likes
-    # -----------------------------------------
+    # ---------------------------------------------------------
+    # BUILD USER GENRE VECTOR
+    # ---------------------------------------------------------
 
-    def _compute_depth_scores(self, selected_genres):
-        user_genre_set = set(selected_genres)
-        depth_scores = []
+    def _build_user_vector(
+        self,
+        selected_genres
+    ):
 
-        for genre_list in self.movies_df["genre_list"]:
-            movie_genre_set = set(genre_list)
-            total_movie_genres = len(movie_genre_set)
+        return self.mlb.transform(
+            [selected_genres]
+        )
 
-            if total_movie_genres == 0:
-                depth_scores.append(0.0)
-                continue
 
-            matched = len(user_genre_set & movie_genre_set)
-            depth_scores.append(matched / total_movie_genres)
+    # ---------------------------------------------------------
+    # DEPTH SCORE
+    #
+    # How much of a movie's genres match the user's preferences.
+    #
+    # Example:
+    # User: Action, Comedy, Drama
+    # Movie: Action, Comedy
+    #
+    # Depth = 2 / 2 = 1.0
+    # ---------------------------------------------------------
 
-        return np.array(depth_scores)
+    def _compute_depth_scores(
+        self,
+        selected_genres
+    ):
 
-    # -----------------------------------------
-    # BREADTH-WISE SIMILARITY
-    # How many of the user's genres does the movie cover?
-    # = matched_genres / total_user_genres
-    # High breadth = movie covers most of what user asked for
-    # -----------------------------------------
+        selected_set = set(
+            selected_genres
+        )
 
-    def _compute_breadth_scores(self, selected_genres):
-        user_genre_set = set(selected_genres)
-        total_user_genres = len(user_genre_set)
+        def calculate_depth(
+            movie_genres
+        ):
 
-        if total_user_genres == 0:
-            return np.zeros(len(self.movies_df))
+            movie_set = set(
+                movie_genres
+            )
 
-        breadth_scores = []
+            if not movie_set:
+                return 0.0
 
-        for genre_list in self.movies_df["genre_list"]:
-            movie_genre_set = set(genre_list)
-            matched = len(user_genre_set & movie_genre_set)
-            breadth_scores.append(matched / total_user_genres)
+            matched = movie_set.intersection(
+                selected_set
+            )
 
-        return np.array(breadth_scores)
+            return len(matched) / len(
+                movie_set
+            )
 
-    # -----------------------------------------
-    # HELPER: CLEAN MOVIELENS TITLE FOR TMDB SEARCH
-    # -----------------------------------------
+        return self.movies_df[
+            "genre_list"
+        ].apply(
+            calculate_depth
+        )
 
-    def _clean_title_for_tmdb(self, title: str) -> str:
-        if not title:
-            return ""
-        # 1. Remove year in parentheses e.g. "(1993)"
-        cleaned = re.sub(r'\s*\(\d{4}\)', '', title)
-        # 2. Fix inverted articles e.g. "Wedding Banquet, The" -> "The Wedding Banquet"
-        if ',' in cleaned:
-            parts = cleaned.rsplit(',', 1)
-            if parts[1].strip().lower() in ['the', 'a', 'an']:
-                cleaned = f"{parts[1].strip()} {parts[0].strip()}"
-        # 3. Remove secondary title brackets e.g. "(Xi yan)"
-        cleaned = re.sub(r'\s*\([^)]*\)', '', cleaned)
-        return cleaned.strip()
 
-    # -----------------------------------------
-    # HELPER: FETCH TMDB METADATA
-    # -----------------------------------------
+    # ---------------------------------------------------------
+    # BREADTH SCORE
+    #
+    # How much of the user's selected preference is represented
+    # in the movie.
+    #
+    # Example:
+    # User: Action, Comedy, Drama
+    # Movie: Action, Comedy
+    #
+    # Breadth = 2 / 3
+    # ---------------------------------------------------------
 
-    def fetch_tmdb_metadata(self, title: str, tmdb_id=None) -> dict:
-        fallback = {
-            "poster_path": "https://via.placeholder.com/500x750?text=No+Poster",
-            "overview": "Movie description unavailable.",
-            "tmdb_rating": "N/A"
-        }
+    def _compute_breadth_scores(
+        self,
+        selected_genres
+    ):
 
-        if not self.tmdb_api_key:
-            return fallback
+        selected_set = set(
+            selected_genres
+        )
 
-        try:
-            # Method 1: Try TMDB ID lookup if available
-            if pd.notna(tmdb_id) and str(tmdb_id).strip() != "":
-                url = f"https://api.themoviedb.org/3/movie/{int(tmdb_id)}?api_key={self.tmdb_api_key}"
-                res = requests.get(url, timeout=3)
-                if res.status_code == 200:
-                    movie = res.json()
-                    poster = movie.get("poster_path")
-                    return {
-                        "poster_path": f"https://image.tmdb.org/t/p/w500{poster}" if poster else fallback["poster_path"],
-                        "overview": movie.get("overview") or fallback["overview"],
-                        "tmdb_rating": f"TMDB {round(movie['vote_average'], 1)}/10" if movie.get("vote_average") else fallback["tmdb_rating"]
-                    }
+        if not selected_set:
 
-            # Method 2: Fallback to Title Search with Cleaned Title
-            cleaned_title = self._clean_title_for_tmdb(title)
-            search_url = f"https://api.themoviedb.org/3/search/movie?api_key={self.tmdb_api_key}&query={cleaned_title}"
-            res = requests.get(search_url, timeout=3)
+            return pd.Series(
+                0.0,
+                index=self.movies_df.index
+            )
 
-            if res.status_code == 200:
-                results = res.json().get("results")
-                if results:
-                    movie = results[0]
-                    poster = movie.get("poster_path")
-                    return {
-                        "poster_path": f"https://image.tmdb.org/t/p/w500{poster}" if poster else fallback["poster_path"],
-                        "overview": movie.get("overview") or fallback["overview"],
-                        "tmdb_rating": f"TMDB {round(movie['vote_average'], 1)}/10" if movie.get("vote_average") else fallback["tmdb_rating"]
-                    }
+        def calculate_breadth(
+            movie_genres
+        ):
 
-        except Exception as e:
-            print(f"Safe catch during TMDB fetch for '{title}': {e}")
+            movie_set = set(
+                movie_genres
+            )
 
-        return fallback
+            matched = movie_set.intersection(
+                selected_set
+            )
 
-    # -----------------------------------------
-    # RECOMMEND
-    # -----------------------------------------
+            return len(matched) / len(
+                selected_set
+            )
+
+        return self.movies_df[
+            "genre_list"
+        ].apply(
+            calculate_breadth
+        )
+
+
+    # ---------------------------------------------------------
+    # NORMALIZE RATING
+    # ---------------------------------------------------------
+
+    def _rating_score(self):
+
+        return (
+            self.movies_df["avg_rating"]
+            / 5.0
+        )
+
+
+    # ---------------------------------------------------------
+    # RECOMMEND MOVIES
+    # ---------------------------------------------------------
 
     def recommend(
         self,
         selected_genres,
-        top_n=10,
         mode="familiar",
-        discover_genre=None
+        discover_genre=None,
+        top_n=20
     ):
-        if not selected_genres:
-            raise ValueError("Please select at least one genre.")
 
-        # --- Core similarity scores ---
-        user_vector = self._build_user_vector(selected_genres)
-        cosine_scores  = cosine_similarity(user_vector, self.genre_matrix)[0]
-        depth_scores   = self._compute_depth_scores(selected_genres)
-        breadth_scores = self._compute_breadth_scores(selected_genres)
+        if not selected_genres:
+            return []
+
+
+        # -----------------------------------------------------
+        # USER VECTOR + COSINE SIMILARITY
+        # -----------------------------------------------------
+
+        user_vector = (
+            self._build_user_vector(
+                selected_genres
+            )
+        )
+
+        cosine_scores = cosine_similarity(
+            user_vector,
+            self.genre_matrix
+        )[0]
+
+
+        # -----------------------------------------------------
+        # DEPTH + BREADTH
+        # -----------------------------------------------------
+
+        depth_scores = (
+            self._compute_depth_scores(
+                selected_genres
+            )
+        )
+
+        breadth_scores = (
+            self._compute_breadth_scores(
+                selected_genres
+            )
+        )
+
+
+        # -----------------------------------------------------
+        # CREATE RESULT DATAFRAME
+        # -----------------------------------------------------
 
         results = self.movies_df.copy()
-        results["similarity"]    = cosine_scores
-        results["depth"]         = depth_scores
-        results["breadth"]       = breadth_scores
-        results["rating_score"]  = results["avg_rating"] / 5.0
 
-        # ------------------------------------------------------------------
-        # Mode: familiar
-        #   Priority: cosine match + breadth (cover user genres) + depth
-        #   (how focused the movie is) + rating
-        #   Weights: cosine=0.50, breadth=0.20, depth=0.15, rating=0.15
-        # ------------------------------------------------------------------
+        results["similarity"] = (
+            cosine_scores
+        )
+
+        results["depth_score"] = (
+            depth_scores
+        )
+
+        results["breadth_score"] = (
+            breadth_scores
+        )
+
+        results["rating_score"] = (
+            results["avg_rating"] / 5.0
+        )
+
+
+        # -----------------------------------------------------
+        # MODE SELECTION
+        # -----------------------------------------------------
+
         if mode == "familiar":
+
             results["final_score"] = (
                 0.50 * results["similarity"]
-                + 0.20 * results["breadth"]
-                + 0.15 * results["depth"]
+                + 0.20 * results["breadth_score"]
+                + 0.15 * results["depth_score"]
                 + 0.15 * results["rating_score"]
             )
 
-        # ------------------------------------------------------------------
-        # Mode: discover
-        #   Priority: breadth (explore widely) + cosine + rating, depth lower
-        #   Filter by discover_genre if provided
-        #   Weights: cosine=0.35, breadth=0.25, depth=0.10, rating=0.30
-        # ------------------------------------------------------------------
+
         elif mode == "discover":
+
             if discover_genre:
+
                 results = results[
                     results["genre_list"].apply(
-                        lambda genres: discover_genre in genres
+                        lambda genres:
+                            discover_genre in genres
                     )
-                ]
+                ].copy()
+
             results["final_score"] = (
                 0.35 * results["similarity"]
-                + 0.25 * results["breadth"]
-                + 0.10 * results["depth"]
+                + 0.25 * results["breadth_score"]
+                + 0.10 * results["depth_score"]
                 + 0.30 * results["rating_score"]
             )
 
+
         else:
+
             results["final_score"] = (
                 0.50 * results["similarity"]
-                + 0.20 * results["breadth"]
-                + 0.15 * results["depth"]
+                + 0.20 * results["breadth_score"]
+                + 0.15 * results["depth_score"]
                 + 0.15 * results["rating_score"]
             )
 
-        results = results[results["final_score"] > 0]
+
+        # -----------------------------------------------------
+        # REMOVE ZERO-SCORE MOVIES
+        # -----------------------------------------------------
+
+        results = results[
+            results["final_score"] > 0
+        ].copy()
+
+
+        # -----------------------------------------------------
+        # SORT RECOMMENDATIONS
+        # -----------------------------------------------------
+
         results = results.sort_values(
-            by=["final_score", "avg_rating", "title"],
-            ascending=[False, False, True]
+            by=[
+                "final_score",
+                "avg_rating",
+                "title"
+            ],
+            ascending=[
+                False,
+                False,
+                True
+            ]
         )
 
-        top_results = results.head(top_n)
 
-        # Build output payload with TMDB integration
+        # -----------------------------------------------------
+        # BUILD RECOMMENDATION OUTPUT
+        # -----------------------------------------------------
+
         recommendations = []
-        for _, row in top_results.iterrows():
-            tmdb_data = self.fetch_tmdb_metadata(
-                title=row["title"],
-                tmdb_id=row.get("tmdbId")
+
+
+        for _, movie in results.head(
+            top_n
+        ).iterrows():
+
+            movie_genres = set(
+                movie["genre_list"]
             )
 
-            recommendations.append({
-                "movieId":      int(row["movieId"]),
-                "title":        row["title"],
-                "genres":       row["genres"],
-                "match_score":  round(float(row["final_score"]), 4),
-                "breadth_score": round(float(row["breadth"]), 4),
-                "depth_score":  round(float(row["depth"]), 4),
-                "rating":       round(float(row["avg_rating"]), 1),
-                "poster_url":   tmdb_data["poster_path"],
-                "overview":     tmdb_data["overview"],
-                "tmdb_rating":  tmdb_data["tmdb_rating"]
-            })
+            user_genres = set(
+                selected_genres
+            )
+
+
+            matched_genres = sorted(
+                movie_genres.intersection(
+                    user_genres
+                )
+            )
+
+
+            extra_genres = sorted(
+                movie_genres.difference(
+                    user_genres
+                )
+            )
+
+
+            # ---------------------------------------------
+            # EXPLAINABLE RECOMMENDATION
+            # ---------------------------------------------
+
+            explanation_parts = []
+
+
+            if matched_genres:
+
+                explanation_parts.append(
+                    "Matches your preferred genres: "
+                    + ", ".join(
+                        matched_genres
+                    )
+                )
+
+
+            depth_percentage = round(
+                movie["depth_score"] * 100
+            )
+
+
+            breadth_percentage = round(
+                movie["breadth_score"] * 100
+            )
+
+
+            explanation_parts.append(
+                f"{depth_percentage}% genre depth match"
+            )
+
+
+            explanation_parts.append(
+                f"{breadth_percentage}% preference coverage"
+            )
+
+
+            explanation_parts.append(
+                f"MovieLens rating: "
+                f"{movie['avg_rating']:.1f}/5"
+            )
+
+
+            if extra_genres:
+
+                explanation_parts.append(
+                    "Also includes: "
+                    + ", ".join(
+                        extra_genres
+                    )
+                )
+
+
+            explanation = " • ".join(
+                explanation_parts
+            )
+
+
+            # ---------------------------------------------
+            # TMDB ID
+            # ---------------------------------------------
+
+            tmdb_id = movie.get(
+                "tmdbId"
+            )
+
+
+            if pd.isna(tmdb_id):
+
+                tmdb_id = None
+
+            else:
+
+                try:
+
+                    tmdb_id = int(
+                        tmdb_id
+                    )
+
+                except (
+                    ValueError,
+                    TypeError
+                ):
+
+                    tmdb_id = None
+
+
+            # ---------------------------------------------
+            # ADD RECOMMENDATION
+            # ---------------------------------------------
+
+            recommendations.append(
+                {
+                    "movieId": int(
+                        movie["movieId"]
+                    ),
+
+                    "title": movie["title"],
+
+                    "genres": movie["genres"],
+
+                    # Similarity information
+                    "match_score": round(
+                        float(
+                            movie["similarity"]
+                        ),
+                        4
+                    ),
+
+                    "breadth_score": round(
+                        float(
+                            movie["breadth_score"]
+                        ),
+                        4
+                    ),
+
+                    "depth_score": round(
+                        float(
+                            movie["depth_score"]
+                        ),
+                        4
+                    ),
+
+                    # Rating
+                    "rating": round(
+                        float(
+                            movie["avg_rating"]
+                        ),
+                        2
+                    ),
+
+                    # TMDB mapping
+                    "tmdbId": tmdb_id,
+
+                    # Explainability
+                    "matched_genres":
+                        matched_genres,
+
+                    "extra_genres":
+                        extra_genres,
+
+                    "explanation":
+                        explanation,
+
+                    # Filled/enriched by app.py
+                    "poster_url": None,
+
+                    "overview": None,
+
+                    "tmdb_rating": None,
+
+                    "tmdb_url": None,
+
+                    "streaming_providers": []
+                }
+            )
+
 
         return recommendations
