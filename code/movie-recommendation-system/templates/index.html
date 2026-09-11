@@ -1,590 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Preference-Driven Movie Recommendation System</title>
+    <title>Movie Recommendation System</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
 
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-<div class="container">
-
-    <!-- =====================================================
-         HOME
-    ====================================================== -->
-
+    <!-- ==================== HOME ==================== -->
     <section id="home-section" class="section active">
 
-        <header>
+        <div class="home-container">
 
-            <h1>
-                🎬 Preference-Driven Movie Recommendation System
+            <h1 class="main-title">
+                🎬 Movie Recommendation System
             </h1>
 
+            <p class="main-subtitle">
+                Find movies you'll love based on your preferences.
+            </p>
+
+            <div class="mode-container">
+
+                <!-- Individual Mode -->
+                <div class="mode-card" onclick="showIndividualMode()">
+                    <div class="mode-icon">👤</div>
+
+                    <h2>Individual Mode</h2>
+
+                    <p>
+                        Get personalized movie recommendations
+                        based on your preferences.
+                    </p>
+                </div>
+
+                <!-- Discover Mode -->
+                <div class="mode-card" onclick="showDiscoverMode()">
+                    <div class="mode-icon">🔎</div>
+
+                    <h2>Discover Movies</h2>
+
+                    <p>
+                        Explore movies by genre and discover
+                        something new.
+                    </p>
+                </div>
+
+                <!-- Group Mode -->
+                <div class="mode-card" onclick="showGroupMode()">
+                    <div class="mode-icon">👥</div>
+
+                    <h2>Group Mode</h2>
+
+                    <p>
+                        Find movies that work for everyone
+                        in your group.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- WATCHLIST BUTTON -->
+            <button
+                type="button"
+                class="watchlist-main-button"
+                onclick="showWatchlist()"
+            >
+                <i class="bi bi-heart-fill"></i>
+
+                My Watchlist
+
+                <span id="watchlist-count">0</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== INDIVIDUAL MODE ==================== -->
+    <section id="individual-section" class="section">
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="goHome()"
+        >
+            ← Back
+        </button>
+
+        <div class="section-container">
+
+            <h2>👤 Individual Recommendations</h2>
+
             <p>
-                Find something you'll love — or discover something new.
+                Tell us what kind of movie you're looking for.
             </p>
 
-        </header>
+            <form id="individual-form">
 
+                <div class="form-group">
 
-        <h2>
-            How would you like to choose a movie?
-        </h2>
+                    <label for="individual-genre">
+                        Select Genre
+                    </label>
 
+                    <select id="individual-genre">
+                        <option value="">Any Genre</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Thriller">Thriller</option>
+                    </select>
 
-        <div class="mode-container">
-
-            <button
-                class="mode-card"
-                onclick="showIndividual()">
-
-                <span class="mode-icon">
-                    <i class="bi bi-person-fill"></i>
-                </span>
-
-                <h3>
-                    Individual Mode
-                </h3>
-
-                <p>
-                    Get personalized recommendations for yourself.
-                </p>
-
-            </button>
-
-
-            <button
-                class="mode-card"
-                onclick="showGroup()">
-
-                <span class="mode-icon">
-                    <i class="bi bi-people-fill"></i>
-                </span>
-
-                <h3>
-                    Group Mode
-                </h3>
-
-                <p>
-                    Find movies that suit everyone's preferences.
-                </p>
-
-            </button>
-
-        </div>
-
-
-        <p class="home-footnote">
-            Recommendations blend your genre picks with live TMDB ratings.
-        </p>
-
-
-        <!-- GENRE PREVIEW STRIP -->
-
-        <div class="genre-preview">
-
-            <p class="genre-preview-label">
-                Explore across
-            </p>
-
-            <div class="genre-preview-row">
-
-                <span><i class="bi bi-lightning-charge-fill"></i> Action</span>
-                <span><i class="bi bi-compass-fill"></i> Adventure</span>
-                <span><i class="bi bi-stars"></i> Animation</span>
-                <span><i class="bi bi-emoji-laughing-fill"></i> Comedy</span>
-                <span><i class="bi bi-search"></i> Crime</span>
-                <span><i class="bi bi-mask"></i> Drama</span>
-                <span><i class="bi bi-magic"></i> Fantasy</span>
-                <span><i class="bi bi-emoji-dizzy-fill"></i> Horror</span>
-                <span><i class="bi bi-heart-fill"></i> Romance</span>
-                <span><i class="bi bi-rocket-takeoff-fill"></i> Sci-Fi</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         INDIVIDUAL CHOICE
-    ====================================================== -->
-
-    <section
-        id="individual-choice-section"
-        class="section">
-
-        <button
-            class="back-button"
-            onclick="goHome()">
-
-            ← Back
-
-        </button>
-
-
-        <h2>
-            Individual Mode
-        </h2>
-
-
-        <p>
-            How would you like to choose your movie?
-        </p>
-
-
-        <div class="explore-mode-container">
-
-
-            <!-- FAMILIAR -->
-
-            <button
-                class="explore-mode-card"
-                onclick="openFamiliar()">
-
-                <div class="explore-icon">
-                    <i class="bi bi-heart-fill"></i>
                 </div>
 
-                <h3>
-                    Familiar
-                </h3>
-
-                <p>
-                    Recommend movies based on what you
-                    usually like.
-                </p>
-
-            </button>
-
-
-
-            <!-- DISCOVER -->
-
-            <button
-                class="explore-mode-card"
-                onclick="openDiscover()">
-
-                <div class="explore-icon">
-                    <i class="bi bi-stars"></i>
-                </div>
-
-                <h3>
-                    Discover
-                </h3>
-
-                <p>
-                    Explore something different today.
-                </p>
-
-            </button>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         FAMILIAR
-    ====================================================== -->
-
-    <section
-        id="familiar-section"
-        class="section">
-
-
-        <button
-            class="back-button"
-            onclick="showIndividual()">
-
-            ← Back
-
-        </button>
-
-
-        <h2>
-            ❤️ Familiar Recommendations
-        </h2>
-
-
-        <p>
-            Recommendations based on your previous
-            viewing preferences.
-        </p>
-
-
-        <p class="small-note">
-            Your familiar preferences are automatically
-            inferred from your viewing history.
-        </p>
-
-
-        <!-- AUTOMATICALLY DETECTED PREFERENCES -->
-
-        <div
-            id="familiar-preferences"
-            class="familiar-preferences">
-        </div>
-
-
-        <button
-            class="primary-button"
-            onclick="getFamiliarRecommendations()">
-
-            Get Familiar Recommendations
-
-        </button>
-
-
-        <!-- RESULTS -->
-
-        <div
-            id="familiar-results"
-            class="results">
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         DISCOVER
-    ====================================================== -->
-
-    <section
-        id="discover-section"
-        class="section">
-
-
-        <button
-            class="back-button"
-            onclick="showIndividual()">
-
-            ← Back
-
-        </button>
-
-
-        <h2>
-            ✨ Discover Something New
-        </h2>
-
-
-        <p>
-            What would you like to explore today?
-        </p>
-
-
-
-        <!-- =================================================
-             VISUAL GENRE SELECTION
-        ================================================== -->
-
-        <div class="visual-genre-section">
-
-
-            <!-- PAGE 1 -->
-
-            <div
-                id="discover-page-1"
-                class="genre-page active">
-
-                <div
-                    id="discover-grid-1"
-                    class="visual-genre-grid">
-                </div>
-
-            </div>
-
-
-
-            <!-- PAGE 2 -->
-
-            <div
-                id="discover-page-2"
-                class="genre-page">
-
-                <div
-                    id="discover-grid-2"
-                    class="visual-genre-grid">
-                </div>
-
-            </div>
-
-
-
-            <!-- PAGE NAVIGATION -->
-
-            <div class="genre-navigation">
-
-
-                <button
-                    id="discover-prev"
-                    class="genre-nav-button"
-                    onclick="previousDiscoverGenres()">
-
-                    ← Previous
-
+                <button type="submit" class="primary-button">
+                    Get Recommendations
                 </button>
 
+            </form>
+
+            <div
+                id="individual-results"
+                class="results"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== DISCOVER MODE ==================== -->
+    <section id="discover-section" class="section">
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="goHome()"
+        >
+            ← Back
+        </button>
+
+        <div class="section-container">
+
+            <h2>🔎 Discover Movies</h2>
+
+            <p>
+                Choose a genre and explore movies.
+            </p>
+
+            <div class="genre-grid">
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Action')"
+                >
+                    Action
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Adventure')"
+                >
+                    Adventure
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Animation')"
+                >
+                    Animation
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Comedy')"
+                >
+                    Comedy
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Crime')"
+                >
+                    Crime
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Drama')"
+                >
+                    Drama
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Fantasy')"
+                >
+                    Fantasy
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Horror')"
+                >
+                    Horror
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Mystery')"
+                >
+                    Mystery
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Romance')"
+                >
+                    Romance
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Science Fiction')"
+                >
+                    Science Fiction
+                </button>
+
+                <button
+                    type="button"
+                    class="genre-button"
+                    onclick="discoverGenre('Thriller')"
+                >
+                    Thriller
+                </button>
+
+            </div>
+
+            <div
+                id="discover-results"
+                class="results"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== GROUP MODE ==================== -->
+    <section id="group-section" class="section">
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="goHome()"
+        >
+            ← Back
+        </button>
+
+        <div class="section-container">
+
+            <h2>👥 Group Recommendations</h2>
+
+            <p>
+                Find movies suitable for everyone.
+            </p>
+
+            <form id="group-form">
+
+                <div class="form-group">
+
+                    <label>
+                        Select preferred genres
+                    </label>
+
+                    <div class="genre-grid">
+
+                        <label class="checkbox-label">
+                            <input
+                                type="checkbox"
+                                value="Action"
+                                name="group-genre"
+                            >
+                            Action
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input
+                                type="checkbox"
+                                value="Comedy"
+                                name="group-genre"
+                            >
+                            Comedy
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input
+                                type="checkbox"
+                                value="Drama"
+                                name="group-genre"
+                            >
+                            Drama
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input
+                                type="checkbox"
+                                value="Horror"
+                                name="group-genre"
+                            >
+                            Horror
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input
+                                type="checkbox"
+                                value="Romance"
+                                name="group-genre"
+                            >
+                            Romance
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input
+                                type="checkbox"
+                                value="Thriller"
+                                name="group-genre"
+                            >
+                            Thriller
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Find Group Movies
+                </button>
+
+            </form>
+
+            <div
+                id="group-results"
+                class="results"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== WATCHLIST ==================== -->
+    <section id="watchlist-section" class="section">
+
+        <button
+            type="button"
+            class="back-button"
+            onclick="goHome()"
+        >
+            ← Back
+        </button>
+
+        <div class="section-container">
+
+            <div class="watchlist-header">
+
+                <div>
+                    <h2>❤️ My Watchlist</h2>
+
+                    <p>
+                        Movies you've saved to watch later.
+                    </p>
+                </div>
 
                 <span
-                    id="discover-page-indicator">
-
-                    1 / 2
-
+                    id="watchlist-count-large"
+                    class="watchlist-count-large"
+                >
+                    0
                 </span>
 
-
-                <button
-                    id="discover-next"
-                    class="genre-nav-button"
-                    onclick="nextDiscoverGenres()">
-
-                    Next →
-
-                </button>
-
-
             </div>
 
-        </div>
+            <div
+                id="watchlist-results"
+                class="results"
+            ></div>
 
-
-
-        <!-- DISCOVER BUTTON -->
-
-        <button
-            class="primary-button"
-            onclick="getDiscoverRecommendations()">
-
-            Discover Movies
-
-        </button>
-
-
-
-        <!-- RESULTS -->
-
-        <div
-            id="discover-results"
-            class="results">
         </div>
 
     </section>
 
 
-
-    <!-- =====================================================
-         GROUP MODE
-    ====================================================== -->
-
-    <section
-        id="group-section"
-        class="section">
-
-
-        <button
-            class="back-button"
-            onclick="goHome()">
-
-            ← Back
-
-        </button>
-
-
-        <h2>
-            👥 Group Recommendation
-        </h2>
-
-
-        <p>
-            Add everyone and select the genres they want
-            to watch.
-        </p>
-
-
-
-        <!-- MEMBERS -->
-
-        <div
-            id="members-container">
-        </div>
-
-
-
-        <!-- ADD MEMBER -->
-
-        <button
-            class="secondary-button"
-            onclick="addMember()">
-
-            + Add Member
-
-        </button>
-
-
-
-        <!-- GENERATE -->
-
-        <button
-            class="primary-button"
-            onclick="getGroupRecommendations()">
-
-            Generate Group Recommendations
-
-        </button>
-
-
-
-        <!-- GROUP RESULTS -->
-
-        <div
-            id="group-results"
-            class="results">
-        </div>
-
-    </section>
-
-</div>
-
-
-
-<!-- =========================================================
-     MOVIE DETAILS MODAL
-
-     Clicking a movie card will open this.
-========================================================== -->
-
-<div
-    id="movie-modal"
-    class="movie-modal">
-
-
-    <div class="movie-modal-content">
-
-
-        <!-- CLOSE -->
-
-        <button
-            class="movie-modal-close"
-            onclick="closeMovieModal()">
-
-            ×
-
-        </button>
-
-
-
-        <div class="movie-detail-layout">
-
-
-            <!-- POSTER -->
-
-            <div class="movie-detail-poster-container">
-
-                <img
-                    id="movie-detail-poster"
-                    class="movie-detail-poster"
-                    src=""
-                    alt="Movie poster">
-
-            </div>
-
-
-
-            <!-- INFORMATION -->
-
-            <div class="movie-detail-info">
-
-
-                <h2
-                    id="movie-detail-title">
-                </h2>
-
-
-                <div
-                    id="movie-detail-meta"
-                    class="movie-detail-meta">
-                </div>
-
-
-                <!-- STORY -->
-
-                <div class="movie-detail-section">
-
-                    <h3>
-                        Story
-                    </h3>
-
-                    <p
-                        id="movie-detail-overview">
-                    </p>
-
-                </div>
-
-
-
-                <!-- WHY RECOMMENDED -->
-
-                <div class="movie-detail-section">
-
-                    <h3>
-                        Why this was recommended
-                    </h3>
-
-                    <p
-                        id="movie-detail-reason">
-                    </p>
-
-                </div>
-
-
-
-                <!-- TMDB -->
-
-                
-                    <a
-    id="movie-detail-tmdb"
-    class="tmdb-button"
-    href="#"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    View Movie Details
-</a>
-
-
-            </div>
+    <!-- ==================== MOVIE MODAL ==================== -->
+    <div
+        id="movie-modal"
+        class="movie-modal"
+    >
+
+        <div class="movie-modal-content">
+
+            <button
+                type="button"
+                class="modal-close"
+                onclick="closeMovieModal()"
+            >
+                ×
+            </button>
+
+            <div id="modal-content"></div>
+
+            <!-- WATCHLIST MODAL BUTTON -->
+            <button
+                type="button"
+                id="modal-watchlist-button"
+                class="watchlist-modal-button"
+            >
+                <i class="bi bi-heart"></i>
+
+                Add to Watchlist
+            </button>
 
         </div>
 
     </div>
 
-</div>
+
+    <!-- ==================== LOADING ==================== -->
+    <div
+        id="loading"
+        class="loading"
+    >
+        <div class="spinner"></div>
+
+        <p>
+            Finding the best movies for you...
+        </p>
+    </div>
 
 
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================== -->
-
-<script src="/static/script.js"></script>
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
-
 </html>

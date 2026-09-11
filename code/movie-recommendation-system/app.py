@@ -1,4 +1,3 @@
-
 """
 app.py
 ------
@@ -195,13 +194,15 @@ def get_tmdb_metadata(tmdb_id):
         "release_date": data.get("release_date", ""),
         "runtime": data.get("runtime", None),
         "tmdb_url": f"https://www.themoviedb.org/movie/{tmdb_id}",
-
-        # NEW
         "streaming_providers": unique_streaming_providers
     }
 
+
 # =====================================================
 # SEARCH TMDB METADATA BY TITLE
+# BUG FIX: indentation was wrong in original — poster_path check
+# was outside the for loop, so last movie's value was used always.
+# Now we break as soon as we find a result with a poster.
 # =====================================================
 
 def fetch_tmdb_by_title_search(title):
@@ -216,25 +217,24 @@ def fetch_tmdb_by_title_search(title):
     results = data.get("results", [])
 
     for movie in results:
-     poster_path = movie.get("poster_path")
-
-    if poster_path:
-        return {
-            "tmdb_id": movie.get("id"),
-            "poster": f"{TMDB_IMAGE_BASE_URL}{poster_path}",
-            "overview": movie.get(
-                "overview",
-                "Movie description unavailable."
-            ),
-            "tmdb_rating": (
-                round(float(movie.get("vote_average", 0)), 1)
-                if movie.get("vote_average")
-                else "N/A"
-            ),
-            "release_date": movie.get("release_date", ""),
-            "runtime": None,
-            "tmdb_url": f"https://www.themoviedb.org/movie/{movie.get('id')}"
-        }
+        poster_path = movie.get("poster_path")
+        if poster_path:
+            return {
+                "tmdb_id": movie.get("id"),
+                "poster": f"{TMDB_IMAGE_BASE_URL}{poster_path}",
+                "overview": movie.get(
+                    "overview",
+                    "Movie description unavailable."
+                ),
+                "tmdb_rating": (
+                    round(float(movie.get("vote_average", 0)), 1)
+                    if movie.get("vote_average")
+                    else "N/A"
+                ),
+                "release_date": movie.get("release_date", ""),
+                "runtime": None,
+                "tmdb_url": f"https://www.themoviedb.org/movie/{movie.get('id')}"
+            }
 
     return {}
 
@@ -264,32 +264,33 @@ def enrich_recommendations(recommendations):
         tmdb_id = tmdb_mapping.get(int(movie_id))
         metadata = {}
 
-        # 2. Try fetching via links.csv tmdb_id
+        # Try fetching via links.csv tmdb_id
         if tmdb_id:
             metadata = get_tmdb_metadata(tmdb_id)
 
-        # 3. Fallback to Title Search if tmdb_id missing or poster not found
+        # Fallback to Title Search if tmdb_id missing or poster not found
         if not metadata.get("poster"):
             title_metadata = fetch_tmdb_by_title_search(movie_title)
             if title_metadata:
                 metadata = title_metadata
 
-        # Fallback SVG poster url with encoded title text
+        # Fallback poster url with encoded title text
         encoded_title = urllib.parse.quote(movie_title)
         fallback_poster = f"https://via.placeholder.com/500x750/1e293b/ffffff?text={encoded_title}"
 
         # Assign values safely
         result_payload = {
-            "tmdb_id": metadata.get("tmdb_id", tmdb_id),
-            "poster": metadata.get("poster") or fallback_poster,
-            "overview": metadata.get("overview") or "Movie description unavailable.",
-            "tmdb_rating": metadata.get("tmdb_rating") or "N/A",
-            "release_date": metadata.get("release_date", ""),
-            "runtime": metadata.get("runtime", None),
-            "tmdb_url": metadata.get("tmdb_url", None)
+            "tmdb_id":            metadata.get("tmdb_id", tmdb_id),
+            "poster":             metadata.get("poster") or fallback_poster,
+            "overview":           metadata.get("overview") or "Movie description unavailable.",
+            "tmdb_rating":        metadata.get("tmdb_rating") or "N/A",
+            "release_date":       metadata.get("release_date", ""),
+            "runtime":            metadata.get("runtime", None),
+            "tmdb_url":           metadata.get("tmdb_url", None),
+            "streaming_providers": metadata.get("streaming_providers", [])
         }
 
-        # Store result in cache if poster was successfully resolved from TMDB
+        # Store in cache if poster was successfully resolved from TMDB
         if metadata.get("poster"):
             POSTER_CACHE[movie_id] = result_payload
             cache_updated = True
@@ -321,16 +322,16 @@ def list_genres():
 def recommend():
     if request.method == "POST":
         data = request.get_json(silent=True) or {}
-        selected_genres = data.get("genres", [])
-        top_n = int(data.get("top_n", 16))
-        mode = data.get("mode", "familiar")
-        discover_genre = data.get("discover_genre")
+        selected_genres  = data.get("genres", [])
+        top_n            = int(data.get("top_n", 16))
+        mode             = data.get("mode", "familiar")
+        discover_genre   = data.get("discover_genre")
     else:
-        genres_param = request.args.get("genres", "")
-        selected_genres = [g.strip() for g in genres_param.split(",") if g.strip()]
-        top_n = int(request.args.get("top_n", 16))
-        mode = request.args.get("mode", "familiar")
-        discover_genre = request.args.get("discover_genre")
+        genres_param     = request.args.get("genres", "")
+        selected_genres  = [g.strip() for g in genres_param.split(",") if g.strip()]
+        top_n            = int(request.args.get("top_n", 16))
+        mode             = request.args.get("mode", "familiar")
+        discover_genre   = request.args.get("discover_genre")
 
     if not selected_genres:
         return jsonify({"error": "Please provide at least one genre via 'genres'."}), 400
@@ -349,8 +350,8 @@ def recommend():
 
     return jsonify({
         "selected_genres": selected_genres,
-        "mode": mode,
-        "count": len(recommendations),
+        "mode":            mode,
+        "count":           len(recommendations),
         "recommendations": recommendations
     })
 

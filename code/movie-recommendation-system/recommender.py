@@ -1,7 +1,7 @@
-
 import re
 import requests
 import pandas as pd
+import numpy as np
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -100,6 +100,53 @@ class MovieRecommender:
         return self.mlb.transform([selected_genres])
 
     # -----------------------------------------
+    # DEPTH-WISE SIMILARITY
+    # How focused is the movie on the user's genres?
+    # = matched_genres / total_movie_genres
+    # High depth = movie is mostly about genres user likes
+    # -----------------------------------------
+
+    def _compute_depth_scores(self, selected_genres):
+        user_genre_set = set(selected_genres)
+        depth_scores = []
+
+        for genre_list in self.movies_df["genre_list"]:
+            movie_genre_set = set(genre_list)
+            total_movie_genres = len(movie_genre_set)
+
+            if total_movie_genres == 0:
+                depth_scores.append(0.0)
+                continue
+
+            matched = len(user_genre_set & movie_genre_set)
+            depth_scores.append(matched / total_movie_genres)
+
+        return np.array(depth_scores)
+
+    # -----------------------------------------
+    # BREADTH-WISE SIMILARITY
+    # How many of the user's genres does the movie cover?
+    # = matched_genres / total_user_genres
+    # High breadth = movie covers most of what user asked for
+    # -----------------------------------------
+
+    def _compute_breadth_scores(self, selected_genres):
+        user_genre_set = set(selected_genres)
+        total_user_genres = len(user_genre_set)
+
+        if total_user_genres == 0:
+            return np.zeros(len(self.movies_df))
+
+        breadth_scores = []
+
+        for genre_list in self.movies_df["genre_list"]:
+            movie_genre_set = set(genre_list)
+            matched = len(user_genre_set & movie_genre_set)
+            breadth_scores.append(matched / total_user_genres)
+
+        return np.array(breadth_scores)
+
+    # -----------------------------------------
     # HELPER: CLEAN MOVIELENS TITLE FOR TMDB SEARCH
     # -----------------------------------------
 
@@ -180,29 +227,58 @@ class MovieRecommender:
         if not selected_genres:
             raise ValueError("Please select at least one genre.")
 
+        # --- Core similarity scores ---
         user_vector = self._build_user_vector(selected_genres)
-        similarity_scores = cosine_similarity(user_vector, self.genre_matrix)[0]
+        cosine_scores  = cosine_similarity(user_vector, self.genre_matrix)[0]
+        depth_scores   = self._compute_depth_scores(selected_genres)
+        breadth_scores = self._compute_breadth_scores(selected_genres)
 
         results = self.movies_df.copy()
-        results["similarity"] = similarity_scores
-        results["rating_score"] = results["avg_rating"] / 5.0
+        results["similarity"]    = cosine_scores
+        results["depth"]         = depth_scores
+        results["breadth"]       = breadth_scores
+        results["rating_score"]  = results["avg_rating"] / 5.0
 
-        # Mode Selection
+        # ------------------------------------------------------------------
+        # Mode: familiar
+        #   Priority: cosine match + breadth (cover user genres) + depth
+        #   (how focused the movie is) + rating
+        #   Weights: cosine=0.50, breadth=0.20, depth=0.15, rating=0.15
+        # ------------------------------------------------------------------
         if mode == "familiar":
             results["final_score"] = (
-                0.80 * results["similarity"] + 0.20 * results["rating_score"]
+                0.50 * results["similarity"]
+                + 0.20 * results["breadth"]
+                + 0.15 * results["depth"]
+                + 0.15 * results["rating_score"]
             )
+
+        # ------------------------------------------------------------------
+        # Mode: discover
+        #   Priority: breadth (explore widely) + cosine + rating, depth lower
+        #   Filter by discover_genre if provided
+        #   Weights: cosine=0.35, breadth=0.25, depth=0.10, rating=0.30
+        # ------------------------------------------------------------------
         elif mode == "discover":
             if discover_genre:
                 results = results[
-                    results["genre_list"].apply(lambda genres: discover_genre in genres)
+                    results["genre_list"].apply(
+                        lambda genres: discover_genre in genres
+                    )
                 ]
             results["final_score"] = (
-                0.55 * results["similarity"] + 0.45 * results["rating_score"]
+                0.35 * results["similarity"]
+                + 0.25 * results["breadth"]
+                + 0.10 * results["depth"]
+                + 0.30 * results["rating_score"]
             )
+
         else:
             results["final_score"] = (
-                0.80 * results["similarity"] + 0.20 * results["rating_score"]
+                0.50 * results["similarity"]
+                + 0.20 * results["breadth"]
+                + 0.15 * results["depth"]
+                + 0.15 * results["rating_score"]
             )
 
         results = results[results["final_score"] > 0]
@@ -222,14 +298,16 @@ class MovieRecommender:
             )
 
             recommendations.append({
-                "movieId": int(row["movieId"]),
-                "title": row["title"],
-                "genres": row["genres"],
-                "match_score": round(float(row["final_score"]), 4),
-                "rating": round(float(row["avg_rating"]), 1),
-                "poster_url": tmdb_data["poster_path"],
-                "overview": tmdb_data["overview"],
-                "tmdb_rating": tmdb_data["tmdb_rating"]
+                "movieId":      int(row["movieId"]),
+                "title":        row["title"],
+                "genres":       row["genres"],
+                "match_score":  round(float(row["final_score"]), 4),
+                "breadth_score": round(float(row["breadth"]), 4),
+                "depth_score":  round(float(row["depth"]), 4),
+                "rating":       round(float(row["avg_rating"]), 1),
+                "poster_url":   tmdb_data["poster_path"],
+                "overview":     tmdb_data["overview"],
+                "tmdb_rating":  tmdb_data["tmdb_rating"]
             })
 
         return recommendations
