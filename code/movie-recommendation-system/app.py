@@ -34,7 +34,7 @@ app.secret_key = os.getenv(
 TMDB_API_TOKEN = os.getenv("TMDB_API_TOKEN")
 WATCHMODE_API_KEY = os.getenv("WATCHMODE_API_KEY")
 
-DATABASE_FILE = "data/movie_users.db"
+DATABASE_FILE = "/tmp/movie_users.db"
 
 TMDB_BASE_URL = "https://api.themoviedb.org/3"
 TMDB_IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
